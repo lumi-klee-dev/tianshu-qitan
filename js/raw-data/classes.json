@@ -1,0 +1,175 @@
+{
+  "_comment": "官网称四职业（非传统门派）：侠客/刺客/术士/修真。心法名与技能名对齐 http://www.tianshu.cn/html/22/627/630/634/8424.htm",
+  "xiake": {
+    "name": "侠客",
+    "desc": "坦克/输出兼备的近战物理职业",
+    "element": "玄",
+    "base": {
+      "str": 14,
+      "con": 12,
+      "agi": 10,
+      "int": 6,
+      "fai": 8
+    },
+    "recommend": {
+      "str": 2,
+      "agi": 1,
+      "con": 2
+    },
+    "main_atk": "patk",
+    "coef": {
+      "pdodge": 1,
+      "pcrit": 3.5,
+      "mdodge": 1,
+      "mcrit": 2.2
+    },
+    "xinfa": [
+      {
+        "name": "英勇",
+        "skills": [
+          "fumo",
+          "beishui",
+          "liumai"
+        ]
+      },
+      {
+        "name": "坚韧",
+        "skills": [
+          "lengchao",
+          "junlin",
+          "guiyuan"
+        ]
+      }
+    ],
+    "talent_skill": "xuanfeng"
+  },
+  "cike": {
+    "name": "刺客",
+    "desc": "速度极快、善用毒与破甲的物理爆发职业",
+    "element": "毒",
+    "base": {
+      "str": 12,
+      "con": 9,
+      "agi": 15,
+      "int": 6,
+      "fai": 8
+    },
+    "recommend": {
+      "agi": 2,
+      "str": 2,
+      "con": 1
+    },
+    "main_atk": "patk",
+    "coef": {
+      "pdodge": 1.87,
+      "pcrit": 5,
+      "mdodge": 0.5,
+      "mcrit": 1.5
+    },
+    "xinfa": [
+      {
+        "name": "自信",
+        "skills": [
+          "qianzhu",
+          "anying",
+          "huagong"
+        ]
+      },
+      {
+        "name": "洞察",
+        "skills": [
+          "jiying",
+          "bahuang",
+          "feihua"
+        ]
+      }
+    ],
+    "talent_skill": "dulong"
+  },
+  "shushi": {
+    "name": "术士",
+    "desc": "法攻最高、擅长状态叠加与控制的法系输出",
+    "element": "火",
+    "base": {
+      "str": 6,
+      "con": 9,
+      "agi": 9,
+      "int": 16,
+      "fai": 10
+    },
+    "recommend": {
+      "int": 3,
+      "fai": 1,
+      "con": 1
+    },
+    "main_atk": "matk",
+    "coef": {
+      "pdodge": 0.5,
+      "pcrit": 1.5,
+      "mdodge": 1,
+      "mcrit": 2.2
+    },
+    "xinfa": [
+      {
+        "name": "热诚",
+        "skills": [
+          "sixiang",
+          "huanmie",
+          "tongdi"
+        ]
+      },
+      {
+        "name": "迷惑",
+        "skills": [
+          "shehun",
+          "meihuo",
+          "anyingmo"
+        ]
+      }
+    ],
+    "talent_skill": "fenxin"
+  },
+  "xiuzhen": {
+    "name": "修真",
+    "desc": "治疗、护盾与增益的辅助法系",
+    "element": "冰",
+    "base": {
+      "str": 6,
+      "con": 11,
+      "agi": 8,
+      "int": 14,
+      "fai": 11
+    },
+    "recommend": {
+      "int": 2,
+      "con": 2,
+      "fai": 1
+    },
+    "main_atk": "matk",
+    "coef": {
+      "pdodge": 1,
+      "pcrit": 2.2,
+      "mdodge": 1.87,
+      "mcrit": 3.5
+    },
+    "xinfa": [
+      {
+        "name": "慈悲",
+        "skills": [
+          "cibei",
+          "chenshui",
+          "xianyin"
+        ]
+      },
+      {
+        "name": "怜悯",
+        "skills": [
+          "tiandi",
+          "shengling",
+          "haotian"
+        ]
+      }
+    ],
+    "talent_skill": "ningbing"
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>天书奇谭 · 界面试玩</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <div class="logo">天书奇谭</div>
+        <div class="sub">原创玩法试玩 · 简笔画占位 · 非官方客户端</div>
+      </div>
+      <div class="spacer"></div>
+      <div class="stat-pill"><span id="lbl-name">—</span></div>
+      <div class="stat-pill" id="lbl-class">—</div>
+      <div class="stat-pill">
+        生命
+        <div class="bar hp"><i id="bar-hp"></i></div>
+        <span id="txt-hp">0/0</span>
+      </div>
+      <div class="stat-pill">
+        法力
+        <div class="bar mp"><i id="bar-mp"></i></div>
+        <span id="txt-mp">0/0</span>
+      </div>
+      <div class="stat-pill">
+        经验
+        <div class="bar xp"><i id="bar-xp"></i></div>
+        <span id="txt-xp">潜能 0</span>
+      </div>
+      <div class="stat-pill" id="lbl-silver">0 银</div>
+      <button class="btn small" id="btn-reset-save" title="清除 localStorage 存档">重置存档</button>
+    </header>
+
+
+    <div class="stage">
+      <!-- Left hero -->
+      <aside class="panel hero-card">
+        <div class="panel-title">人物</div>
+        <div class="doodle-box"><canvas id="hero-canvas" width="120" height="140"></canvas></div>
+        <div class="hero-meta" id="hero-meta"></div>
+        <div class="nav-btns">
+          <button class="btn" id="nav-bag">背包</button>
+          <button class="btn" id="nav-eq">装备</button>
+          <button class="btn" id="nav-char">加点</button>
+          <button class="btn" id="nav-badge">徽章</button>
+          <button class="btn" id="nav-ys">元神</button>
+          <button class="btn primary" id="nav-spirit">精灵</button>
+          <button class="btn primary" id="nav-skill">技能</button>
+          <button class="btn" id="nav-forge">打造</button>
+          <button class="btn primary" id="nav-pet">宠物</button>
+          <button class="btn primary" id="nav-mount">骑宠</button>
+          <button class="btn primary" id="nav-sworn">结义</button>
+          <button class="btn primary" id="nav-guild">帮会</button>
+          <button class="btn primary" id="nav-rebirth">转生</button>
+          <button class="btn primary" id="nav-vitality">历练</button>
+          <button class="btn" onclick="document.getElementById('btn-wild')?.click()">野外</button>
+        </div>
+      </aside>
+
+
+      <!-- Center world -->
+      <main class="panel world">
+        <div class="panel-title">天地之间</div>
+        <div class="scene">
+          <div class="scene-label" id="scene-label">地点：—</div>
+          <div class="battle-arena" id="battle-arena"></div>
+        </div>
+        <div class="log-box" id="battle-log"></div>
+        <div class="action-bar" id="action-bar"></div>
+      </main>
+
+
+      <!-- Right quick bag -->
+      <aside class="panel quick">
+        <div class="panel-title">快捷栏</div>
+        <div class="panel-body">
+          <div class="small mb8">消耗品与部分背包装备</div>
+          <div class="slot-grid" id="quick-grid"></div>
+          <div class="hint mt12">操作提示：Esc 关闭窗口；悬停装备看孔色与属性。</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+
+  <!-- Character modal -->
+  <div class="modal-layer" id="modal-char">
+    <div class="modal xwide">
+      <div class="panel-title">人物属性 <span class="close" data-close>×</span></div>
+      <div id="char-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Bag modal -->
+  <div class="modal-layer" id="modal-bag">
+    <div class="modal xwide">
+      <div class="panel-title">背包 <span class="close" data-close>×</span></div>
+      <div id="bag-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Forge modal -->
+  <div class="modal-layer" id="modal-forge">
+    <div class="modal xwide">
+      <div class="panel-title">打造 · 升星 · 铭刻 · 打孔 · 镶嵌 · 附魔 · 通灵 · 觉醒 <span class="close" data-close>×</span></div>
+      <div id="forge-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Skill / Xinfa modal (v0.5) -->
+  <div class="modal-layer" id="modal-skill">
+    <div class="modal xwide">
+      <div class="panel-title">技能 · 心法 · 天资 · 夫妻 · 生活 <span class="close" data-close>×</span></div>
+      <div id="skill-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Pet modal -->
+  <div class="modal-layer" id="modal-pet">
+    <div class="modal xwide">
+      <div class="panel-title">宠物面板 · 列表 / 资质 / 天赋 / 携带 <span class="close" data-close>×</span></div>
+      <div id="pet-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Mount modal (v1.0) -->
+  <div class="modal-layer" id="modal-mount">
+    <div class="modal xwide">
+      <div class="panel-title">骑宠与兽魂 · 乘骑 / 契约分流 / 兽魂淬炼 / 骑宠技能 <span class="close" data-close>×</span></div>
+      <div id="mount-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Sworn modal (v1.2) -->
+  <div class="modal-layer" id="modal-sworn">
+    <div class="modal xwide">
+      <div class="panel-title">金兰结义 · 同生共死 / 契合度 / 结义任务 / 同心增益 <span class="close" data-close>×</span></div>
+      <div id="sworn-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Guild modal (v1.2) -->
+  <div class="modal-layer" id="modal-guild">
+    <div class="modal xwide">
+      <div class="panel-title">帮会大厅 · 帮会武功科技 / 捐献官 / 属性精进 <span class="close" data-close>×</span></div>
+      <div id="guild-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Rebirth modal (v1.3) -->
+  <div class="modal-layer" id="modal-rebirth">
+    <div class="modal xwide">
+      <div class="panel-title">转生修真 · 一转 / 二转 / 三转 · 菩提子联盟转职 <span class="close" data-close>×</span></div>
+      <div id="rebirth-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Vitality modal (v1.3) -->
+  <div class="modal-layer" id="modal-vitality">
+    <div class="modal xwide">
+      <div class="panel-title">活力与历练 · 活力挂机换元神 · 历练日常任务 <span class="close" data-close>×</span></div>
+      <div id="vitality-body"></div>
+    </div>
+  </div>
+
+
+  <div id="tooltip"></div>
+  <div id="toast"></div>
+
+
+  <script src="js/data.js"></script>
+  <!-- 成功率/数值配置（可直接编辑） -->
+  <script src="data/rates.js"></script>
+  <script src="js/equip-data.js"></script>
+  <script src="js/equip.js"></script>
+  <script src="js/pet.js"></script>
+  <!-- 宠物养成二期 v0.6：武装 / 进化 / 炼化 / 融合 -->
+  <script src="js/pet-advance-data.js"></script>
+  <script src="js/pet-advance.js"></script>
+  <!-- 技能 / 心法 v0.5 -->
+  <script src="js/skill-data.js"></script>
+  <script src="js/skill.js"></script>
+  <!-- 天资 / 夫妻 / 生活 v0.7 -->
+  <script src="js/life-skill-data.js"></script>
+  <script src="js/life-skill.js"></script>
+  <!-- 徽章 / 元神 v0.8 -->
+  <script src="js/badge-data.js"></script>
+  <script src="js/badge.js"></script>
+  <script src="js/yuanshen.js"></script>
+  <!-- 称号 / 法宝 v0.9 -->
+  <script src="js/title-data.js"></script>
+  <script src="js/title.js"></script>
+  <script src="js/fabao-data.js"></script>
+  <script src="js/fabao.js"></script>
+  <!-- 骑宠 / 兽魂 v1.0 (v1.2 骑宠技能) -->
+  <script src="js/mount-data.js"></script>
+  <script src="js/mount.js"></script>
+  <!-- 精灵 / 萝莉 v1.1 -->
+  <script src="js/spirit-data.js"></script>
+  <script src="js/spirit.js"></script>
+  <!-- 结义 v1.2 -->
+  <script src="js/sworn-data.js"></script>
+  <script src="js/sworn.js"></script>
+  <!-- 帮会武功 v1.2 -->
+  <script src="js/guild-data.js"></script>
+  <script src="js/guild.js"></script>
+  <!-- 转生 / 三转联盟 v1.3 -->
+  <script src="js/rebirth-data.js"></script>
+  <script src="js/rebirth.js"></script>
+  <!-- 活力与历练 v1.3 -->
+  <script src="js/vitality.js"></script>
+  <!-- 地灵 / 经脉 v1.4 -->
+  <script src="js/meridian-data.js"></script>
+  <script src="js/meridian.js"></script>
+  <!-- 宠物组合 / 图鉴 v1.4 -->
+  <script src="js/pet-codex.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/equip-ui.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

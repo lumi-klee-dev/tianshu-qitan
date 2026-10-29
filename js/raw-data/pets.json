@@ -1,0 +1,560 @@
+{
+  "_comment": "宠物名称/种类/出现地对齐官网宠物大全 http://www.tianshu.cn/html/22/627/651/7759.htm 与 7760.htm；资质数值按文字版缩放",
+  "growth_rates": {
+    "common": {
+      "name": "普通",
+      "mult": 1.0
+    },
+    "fine": {
+      "name": "优秀",
+      "mult": 1.2
+    },
+    "great": {
+      "name": "杰出",
+      "mult": 1.35
+    },
+    "excellent": {
+      "name": "卓越",
+      "mult": 1.5
+    },
+    "perfect": {
+      "name": "完美",
+      "mult": 1.7
+    }
+  },
+  "growth_weights": {
+    "common": 45,
+    "fine": 30,
+    "great": 15,
+    "excellent": 7,
+    "perfect": 3
+  },
+  "types": [
+    "神兽",
+    "野兽",
+    "人形",
+    "妖怪",
+    "精灵"
+  ],
+  "species": [
+    {
+      "id": "huiyetu",
+      "name": "灰野兔",
+      "carry_level": 1,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          40,
+          65
+        ],
+        "con": [
+          25,
+          45
+        ],
+        "agi": [
+          55,
+          85
+        ],
+        "int": [
+          10,
+          30
+        ]
+      },
+      "skills": [
+        "siyao"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.55,
+      "location": "北影月森林",
+      "source": "http://www.tianshu.cn/html/22/627/651/7760.htm"
+    },
+    {
+      "id": "mao",
+      "name": "猫",
+      "carry_level": 1,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          40,
+          65
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          40,
+          65
+        ],
+        "int": [
+          10,
+          30
+        ]
+      },
+      "skills": [
+        "lizhua"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.5,
+      "location": "北影月森林"
+    },
+    {
+      "id": "baiyang",
+      "name": "白羊",
+      "carry_level": 2,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          35,
+          60
+        ],
+        "con": [
+          50,
+          80
+        ],
+        "agi": [
+          25,
+          45
+        ],
+        "int": [
+          10,
+          30
+        ]
+      },
+      "skills": [
+        "yexing"
+      ],
+      "talent_pool": [
+        "manli",
+        "shengming"
+      ],
+      "catch_rate": 0.45,
+      "location": "东影月森林"
+    },
+    {
+      "id": "zongxiong",
+      "name": "棕熊",
+      "carry_level": 2,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          55,
+          80
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          30,
+          50
+        ],
+        "int": [
+          10,
+          30
+        ]
+      },
+      "skills": [
+        "siyao",
+        "yexing"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.4,
+      "location": "东影月森林"
+    },
+    {
+      "id": "caoshe",
+      "name": "草蛇",
+      "carry_level": 3,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          40,
+          65
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          40,
+          65
+        ],
+        "int": [
+          10,
+          30
+        ]
+      },
+      "skills": [
+        "duxing"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.4,
+      "location": "黑色水域"
+    },
+    {
+      "id": "heiqianxie",
+      "name": "黑钳蟹",
+      "carry_level": 3,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          40,
+          65
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          40,
+          65
+        ],
+        "int": [
+          10,
+          30
+        ]
+      },
+      "skills": [
+        "zhushu"
+      ],
+      "talent_pool": [
+        "shuimobao",
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.35,
+      "location": "黑色水域/海底世界",
+      "note": "可领悟水魔爆"
+    },
+    {
+      "id": "heishuieyu",
+      "name": "黑水鳄鱼",
+      "carry_level": 5,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          45,
+          70
+        ],
+        "con": [
+          45,
+          70
+        ],
+        "agi": [
+          45,
+          70
+        ],
+        "int": [
+          15,
+          35
+        ]
+      },
+      "skills": [
+        "siyao"
+      ],
+      "talent_pool": [
+        "shuimobao",
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.3,
+      "location": "迷梦泽"
+    },
+    {
+      "id": "baoshixie",
+      "name": "宝石蝎",
+      "carry_level": 6,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          60,
+          90
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          35,
+          55
+        ],
+        "int": [
+          15,
+          35
+        ]
+      },
+      "skills": [
+        "duxing",
+        "lizhua"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.28,
+      "location": "灵宠幻境",
+      "note": "进化强壮线参考宠"
+    },
+    {
+      "id": "nunulang",
+      "name": "怒怒狼",
+      "carry_level": 5,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          55,
+          85
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          30,
+          55
+        ],
+        "int": [
+          15,
+          35
+        ]
+      },
+      "skills": [
+        "siyao",
+        "sanbei"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.3,
+      "location": "灵宠幻境"
+    },
+    {
+      "id": "yinlang",
+      "name": "银狼",
+      "carry_level": 7,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          55,
+          85
+        ],
+        "con": [
+          40,
+          65
+        ],
+        "agi": [
+          30,
+          55
+        ],
+        "int": [
+          15,
+          35
+        ]
+      },
+      "skills": [
+        "siyao",
+        "yexing"
+      ],
+      "talent_pool": [
+        "manli",
+        "shixue",
+        "shengming"
+      ],
+      "catch_rate": 0.25,
+      "location": "灵宠幻境"
+    },
+    {
+      "id": "xiaojinlong",
+      "name": "小金龙",
+      "carry_level": 8,
+      "type": "神兽",
+      "atk_type": "magic",
+      "apt": {
+        "str": [
+          40,
+          60
+        ],
+        "con": [
+          45,
+          70
+        ],
+        "agi": [
+          45,
+          70
+        ],
+        "int": [
+          55,
+          85
+        ]
+      },
+      "skills": [
+        "siyao",
+        "fali_zhuoshao"
+      ],
+      "talent_pool": [
+        "longxi",
+        "fengmobao",
+        "shuimobao",
+        "longxing",
+        "longlin",
+        "mohualin",
+        "manli"
+      ],
+      "catch_rate": 0.08,
+      "location": "仙匣",
+      "note": "经典神兽，龙息乱/风魔爆/水魔爆"
+    },
+    {
+      "id": "zhuque",
+      "name": "朱雀",
+      "carry_level": 8,
+      "type": "神兽",
+      "atk_type": "magic",
+      "apt": {
+        "str": [
+          25,
+          45
+        ],
+        "con": [
+          25,
+          45
+        ],
+        "agi": [
+          45,
+          70
+        ],
+        "int": [
+          70,
+          95
+        ]
+      },
+      "skills": [
+        "fali_zhuoshao"
+      ],
+      "talent_pool": [
+        "huomobao",
+        "liesha_bless",
+        "shengming"
+      ],
+      "catch_rate": 0.06,
+      "location": "灵樨至尊/富贵仙匣",
+      "note": "火魔爆法系神兽"
+    },
+    {
+      "id": "heilong",
+      "name": "黑龙",
+      "carry_level": 9,
+      "type": "神兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          55,
+          80
+        ],
+        "con": [
+          45,
+          70
+        ],
+        "agi": [
+          45,
+          70
+        ],
+        "int": [
+          40,
+          60
+        ]
+      },
+      "skills": [
+        "siyao",
+        "yexing"
+      ],
+      "talent_pool": [
+        "shuimobao",
+        "fengmobao",
+        "longxi",
+        "longxing",
+        "longlin",
+        "manli"
+      ],
+      "catch_rate": 0.05,
+      "location": "新年至尊仙匣"
+    },
+    {
+      "id": "shuibinxie",
+      "name": "水滨蟹",
+      "carry_level": 4,
+      "type": "野兽",
+      "atk_type": "phys",
+      "apt": {
+        "str": [
+          45,
+          70
+        ],
+        "con": [
+          45,
+          70
+        ],
+        "agi": [
+          45,
+          70
+        ],
+        "int": [
+          15,
+          35
+        ]
+      },
+      "skills": [
+        "zhushu"
+      ],
+      "talent_pool": [
+        "shuimobao",
+        "manli",
+        "shixue"
+      ],
+      "catch_rate": 0.32,
+      "location": "灵樨仙匣/水域"
+    }
+  ],
+  "neidan_shapes": [
+    "方",
+    "圆",
+    "角",
+    "菱"
+  ],
+  "neidan_tiers": [
+    "上品",
+    "高阶",
+    "圣阶"
+  ],
+  "wuxing_max": {
+    "low": 7,
+    "mid": 12,
+    "high": 20
+  },
+  "loyalty_min_to_fight": 40,
+  "life_min_to_fight": 1
+}

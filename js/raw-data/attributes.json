@@ -1,0 +1,16 @@
+{
+  "_comment": "一级属性→二级属性换算，数值参考 B站天书奇谈WIKI《人物属性》公开换算表（机制借鉴）",
+  "primary": ["str", "con", "agi", "int", "fai"],
+  "primary_names": {"str": "强壮", "con": "耐力", "agi": "敏捷", "int": "智力", "fai": "信仰"},
+  "secondary_names": {"hp": "生命", "mp": "法力", "rage": "怒气上限", "spd": "速度", "regen": "恢复",
+    "patk": "物攻", "pdef": "物防", "matk": "法攻", "mdef": "法防",
+    "pcrit": "物理暴击", "mcrit": "法术暴击", "pdodge": "物理闪避", "mdodge": "法术闪避"},
+  "conversion": {
+    "str": {"hp": 2, "mp": 2, "rage": 2, "spd": 0.2, "regen": -0.2, "patk": 2.2, "pdef": 0.2},
+    "con": {"hp": 24, "mp": 1, "rage": 8, "spd": 0.2, "regen": 0.8, "patk": 0.1, "pdef": 0.1, "mdef": 2.2},
+    "agi": {"hp": 3, "mp": 2, "rage": 2, "spd": 2, "regen": 0.2, "patk": 0.2, "pdef": 0.2},
+    "int": {"hp": 1, "mp": 10, "rage": 2, "spd": 0.1, "regen": -0.3, "patk": 0.1, "pdef": 0.1, "matk": 1.7},
+    "fai": {"hp": 3, "mp": 2, "rage": 12, "spd": 0.2, "regen": -0.1, "patk": 0.2, "pdef": 2.2}
+  },
+  "pet_coef": {"pdodge": 1, "pcrit": 3, "mdodge": 1, "mcrit": 2.2}
+}

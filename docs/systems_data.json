@@ -1,0 +1,8227 @@
+{
+ "meta": {
+  "title": "天书奇谈式全系统玩法数据 v0.1",
+  "generated": "2026-10-27 (Asia/Shanghai)",
+  "note": "placeholder:true 的字段是占位默认值（规格中标 ⚙），可调。来源代号见 全系统规格.md 文件头。",
+  "sources": [
+   "官指",
+   "官告",
+   "BWIKI",
+   "4399宠物大全",
+   "新浪宠物大全",
+   "D-技能公式",
+   "D-进化宠",
+   "D-总纲",
+   "D-内丹",
+   "D-惊舟",
+   "D-曦月",
+   "D-Hibiki",
+   "D-无尚"
+  ]
+ },
+ "classes": [
+  {
+   "name": "侠客",
+   "xinfa": [
+    "英勇",
+    "坚韧"
+   ],
+   "tianzi_element": "玄",
+   "zhuanjing": "铜墙铁壁",
+   "type": "物理",
+   "hero_npc": "坠龙城 顾冲",
+   "demon_enemy": "剑士"
+  },
+  {
+   "name": "刺客",
+   "xinfa": [
+    "自信",
+    "洞察"
+   ],
+   "tianzi_element": "毒",
+   "zhuanjing": "锁喉",
+   "type": "物理",
+   "hero_npc": "九霄台 舞月",
+   "demon_enemy": "拳师"
+  },
+  {
+   "name": "术士",
+   "xinfa": [
+    "热诚",
+    "迷惑"
+   ],
+   "tianzi_element": "火",
+   "zhuanjing": "三圣箴言",
+   "type": "法术",
+   "hero_npc": "皇城 舞修罗",
+   "demon_enemy": "术士"
+  },
+  {
+   "name": "修真",
+   "xinfa": [
+    "慈悲",
+    "怜悯"
+   ],
+   "tianzi_element": "冰",
+   "zhuanjing": "慈悲心怀",
+   "type": "法术",
+   "hero_npc": "广寒城 严宗",
+   "demon_enemy": "侍卫"
+  }
+ ],
+ "cross_class": {
+  "same_type": {
+   "mp_cost_mult": 2,
+   "rage_gain_mult": 0.9,
+   "rage_cost_mult": 1.1
+  },
+  "cross_type": {
+   "mp_cost_mult": 3,
+   "rage_gain_mult": 0.5,
+   "rage_cost_mult": 1.2
+  }
+ },
+ "attributes": {
+  "per_point": {
+   "强壮": {
+    "hp": 2,
+    "mp": 2,
+    "rage": 2,
+    "speed": 0.2,
+    "regen": -0.2,
+    "patk": 2.2,
+    "pdef": 0.2
+   },
+   "耐力": {
+    "hp": 24,
+    "mp": 1,
+    "rage": 8,
+    "speed": 0.2,
+    "regen": 0.8,
+    "patk": 0.1,
+    "pdef": 0.1,
+    "mdef": 2.2
+   },
+   "敏捷": {
+    "hp": 3,
+    "mp": 2,
+    "rage": 2,
+    "speed": 2,
+    "regen": 0.2,
+    "patk": 0.2,
+    "pdef": 0.2
+   },
+   "智力": {
+    "hp": 1,
+    "mp": 10,
+    "rage": 2,
+    "speed": 0.1,
+    "regen": -0.3,
+    "patk": 0.1,
+    "pdef": 0.1,
+    "matk": 1.7
+   },
+   "信仰": {
+    "hp": 3,
+    "mp": 2,
+    "rage": 12,
+    "speed": 0.2,
+    "regen": -0.1,
+    "patk": 0.2,
+    "pdef": 2.2
+   }
+  },
+  "class_secondary": {
+   "侠客": {
+    "agi_pdodge": 1,
+    "agi_pcrit": 3.5,
+    "fai_mdodge": 1,
+    "fai_mcrit": 2.2
+   },
+   "刺客": {
+    "agi_pdodge": 1.87,
+    "agi_pcrit": 5,
+    "fai_mdodge": 0.5,
+    "fai_mcrit": 1.5
+   },
+   "修真": {
+    "agi_pdodge": 1,
+    "agi_pcrit": 2.2,
+    "fai_mdodge": 1.87,
+    "fai_mcrit": 3.5
+   },
+   "术士": {
+    "agi_pdodge": 0.5,
+    "agi_pcrit": 1.5,
+    "fai_mdodge": 1,
+    "fai_mcrit": 2.2
+   }
+  },
+  "hit_dodge_crit_cap": {
+   "value": "30 + 6*level",
+   "placeholder": true
+  }
+ },
+ "character": {
+  "points_per_level": 3,
+  "single_stat_max": "潜力总和的一半",
+  "rebirth_bonus_points": 10,
+  "xinfa_all_10_bonus": 3,
+  "xinfa_all_25_bonus": 6,
+  "auto_growth": {
+   "value": {
+    "侠客": {
+     "强壮": 2,
+     "耐力": 1
+    },
+    "刺客": {
+     "敏捷": 2,
+     "强壮": 1
+    },
+    "术士": {
+     "智力": 2,
+     "耐力": 1
+    },
+    "修真": {
+     "信仰": 2,
+     "智力": 1
+    }
+   },
+   "placeholder": true,
+   "note": "转生后每项+1；仅侠客未转+2强壮/转生+3 为公开举例"
+  },
+  "respec_item": {
+   "value": "洗点丹：返还全部潜力",
+   "placeholder": true
+  }
+ },
+ "xinfa": {
+  "upgrade_exp": "25*(N+M+1)*(N-M)",
+  "upgrade_silver_liang": "0.1*(N+M+1)*(N-M)",
+  "max_level": {
+   "value": "人物等级",
+   "placeholder": true
+  },
+  "xiuwei": {
+   "value": "Σ心法所耗技能经验 × 0.03",
+   "placeholder": true
+  },
+  "control_duration": "3 + 修为/12000",
+  "reset_item": "九转灵心丹（心法总等级200内）"
+ },
+ "skills": [
+  {
+   "cls": "侠客",
+   "xinfa": "英勇",
+   "name": "伏魔刀法",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体物理，概率眩晕 1 回合（看修为）",
+   "formula": "(0.975+0.025Lv)×(物攻−36+60Lv)，物理；施放者修为>目标时概率眩晕 1 回合",
+   "lv11": "—"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "英勇",
+   "name": "破釜沉舟",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "2",
+   "effect": "单体物理，自身生命 <20% 时伤害翻倍",
+   "formula": "(0.84+0.01Lv)×(物攻−36+60Lv)；自身生命 <20% 上限时伤害 ×2",
+   "lv11": "—"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "英勇",
+   "name": "六脉神剑",
+   "category": "初始",
+   "rage": "不变",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "1",
+   "effect": "1~6 目标物理（10 级矩形 6 个）",
+   "formula": "1~6 目标，(0.98+0.02Lv)×(物攻+7Lv)",
+   "lv11": "—"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "英勇",
+   "name": "龙破斩",
+   "category": "转生",
+   "rage": "耗怒",
+   "prereq": "破釜沉舟 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "单体物理，无视防御状态；目标有仙气/罡气/防御时 +50%，概率破甲",
+   "formula": "(1.45+0.05Lv)×(物攻+230+70Lv)；概率破甲，持续 3+修为/12000；无视防御状态；目标有仙气护体/昊天罡气/防御时 +50%（不叠加）",
+   "lv11": "竖排 2 目标"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "坚韧",
+   "name": "冷嘲热讽",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "2",
+   "effect": "嘲讽 3 回合，被打不可闪避，每次被打得 1 层侠义之心",
+   "formula": "嘲讽 3 回合，攻击必须以嘲讽者为中心、不可闪避；被打得 1 层侠义之心；识破降低成功率",
+   "lv11": "十字 4 目标，强制改成打嘲讽者单体"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "坚韧",
+   "name": "君临天下",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "3",
+   "effect": "单体物理，自身血越满伤害越高",
+   "formula": "最高 (1.27+0.03Lv)×(物攻+170+30Lv)，当前生命比越低伤害越低",
+   "lv11": "—"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "坚韧",
+   "name": "一朝归元",
+   "category": "初始",
+   "rage": "耗怒",
+   "prereq": "—",
+   "exp_index_n": "5",
+   "proficiency_weight": "1",
+   "effect": "单体物理，每消耗 1 层侠义之心 +100%（最多 5 层）",
+   "formula": "0.7×(物攻−30+50Lv)；每消耗 1 层侠义之心 +100%，最多 5 层",
+   "lv11": "—"
+  },
+  {
+   "cls": "侠客",
+   "xinfa": "坚韧",
+   "name": "同生共死",
+   "category": "转生",
+   "rage": "回怒（官方写耗怒）【冲突】",
+   "prereq": "君临天下 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "给队友减伤并替他分担，每分担一次得侠义之心",
+   "formula": "目标受击减免 (22.5+2.5Lv)%；剩余伤害由双方分担，施放者承担 = 目标承担 ×(50.5−0.5Lv)%；持续 3+修为/12000；每分担一次得侠义之心",
+   "lv11": "横排 5 目标，概率减免 100%"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "自信",
+   "name": "千蛛万毒手",
+   "category": "初始",
+   "rage": "回怒2类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体物理 + 3 回合中毒",
+   "formula": "(0.585+0.015Lv)×(物攻−30+50Lv)；中毒 3 回合，每回合行动前 (0.26325+0.00675Lv)×物攻 固定伤害",
+   "lv11": "—"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "自信",
+   "name": "暗影迷踪拳",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "2",
+   "effect": "单体物理，速度比越高越痛，自损 15%",
+   "formula": "(0.69+0.01Lv)×(1+速度比)×(物攻−30+50Lv)；速度比=自身速度/目标速度，≤3；自损实际伤害 15%",
+   "lv11": "竖排 2 目标"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "自信",
+   "name": "化功绵掌",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "1",
+   "effect": "扣目标法力并按扣蓝量造成伤害",
+   "formula": "扣法力 (0.75+0.03Lv)×(物攻+80+40Lv)（目标物防可减免），再造成 0.05Lv×实际扣蓝 的物理伤害",
+   "lv11": "—"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "自信",
+   "name": "腐骨蚀心",
+   "category": "转生",
+   "rage": "耗怒",
+   "prereq": "暗影迷踪拳 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "目标挂 debuff，己方物理打它时回血",
+   "formula": "debuff 3+修为/12000 回合；己方物理打它时回血 (0.29+0.01Lv)×伤害+200+100Lv+攻击者恢复",
+   "lv11": "竖排 2 目标"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "洞察",
+   "name": "疾影袭心",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体物理，目标破甲时伤害翻倍",
+   "formula": "(0.79+0.01Lv)×(物攻−30+50Lv)；目标破甲时 ×2",
+   "lv11": "—"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "洞察",
+   "name": "八荒六合",
+   "category": "初始",
+   "rage": "回怒2类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "2",
+   "effect": "目标物伤减免、法伤和治疗增加；对己方附带内力充沛（加速）",
+   "formula": "目标受物理伤害 −(40+10Lv)%（最低 0），受法伤和直接治疗 +(40+10Lv)%，持续 1+Lv/3 回合；对己方还附带“内力充沛”：速度 +0.5×施放者敏捷，持续为八荒的 3 倍；有内力充沛时不能再挂八荒",
+   "lv11": "竖排 2 目标"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "洞察",
+   "name": "飞花溅玉",
+   "category": "初始",
+   "rage": "耗怒",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "1",
+   "effect": "单体物理 + 3 回合递增毒（1×/2×/4×），打断吟唱",
+   "formula": "(0.95+0.05Lv)×(物攻+120+60Lv)；毒 3 回合：本回合 (0.2+0.05Lv)×物攻×随机，下回合 ×2，再下回合 ×4",
+   "lv11": "竖排 2 目标"
+  },
+  {
+   "cls": "刺客",
+   "xinfa": "洞察",
+   "name": "穿心蚀骨",
+   "category": "转生",
+   "rage": "耗怒",
+   "prereq": "疾影袭心 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "伤害池诅咒，累积到阈值触发额外固定伤害",
+   "formula": "debuff 5+修为/12000 回合；伤害池累积己方伤害，池 ≥(2.9+0.1Lv)×K 时，本次附加 (2.175+0.075Lv)×K 固定伤害并扣池；结束时再炸 0.5×池余量+(0.725+0.025Lv)×K。K=施放者物攻+230+70Lv",
+   "lv11": "竖排 2 目标；经脉督脉 50 层强化版见原文"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "热诚",
+   "name": "四相诀",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体法术，概率附加灼烧/冻伤/虚弱/迟缓",
+   "formula": "(0.95+0.05Lv)×(法攻−30+50Lv)；概率灼烧/冻伤/虚弱/迟缓 3 回合",
+   "lv11": "三圣箴言加成：竖排 2"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "热诚",
+   "name": "唤灭破",
+   "category": "初始",
+   "rage": "回怒3类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "2",
+   "effect": "单体法术，目标身上四相状态越多越痛（最多 4 层）",
+   "formula": "[(0.48+0.02Lv)×(状态层数+1)+0.1]×(法攻−30+50Lv)；状态层数=四相状态总层数，≤4",
+   "lv11": "三圣箴言：竖排 2"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "热诚",
+   "name": "恸地神咒",
+   "category": "初始",
+   "rage": "不变",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "1",
+   "effect": "十字 4 目标法术，自身加速、加物防",
+   "formula": "中心 (0.45+0.05Lv)×(法攻−30+50Lv)，其余 (0.27+0.03Lv)×(…)；自身 3 回合：速度 +信仰，物防 +0.25×法防",
+   "lv11": "三圣箴言：矩形 6"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "热诚",
+   "name": "烈焰风暴",
+   "category": "转生",
+   "rage": "耗怒",
+   "prereq": "恸地神咒 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "十字 4 目标火焰伤害 + 灼烧",
+   "formula": "十字 4，(1.95+0.05Lv)×(法攻+265+35Lv)；概率灼烧 3+修为/12000",
+   "lv11": "三圣箴言：矩形 6"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "迷惑",
+   "name": "摄魂咒",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体法术",
+   "formula": "(0.98+0.02Lv)×(法攻−45+75Lv)",
+   "lv11": "三圣箴言：竖排 2"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "迷惑",
+   "name": "魅惑术",
+   "category": "初始",
+   "rage": "回怒2类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "1",
+   "effect": "概率混乱（看修为）",
+   "formula": "修为高于目标时概率混乱 3+修为/12000 回合",
+   "lv11": "三圣箴言：竖排 2"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "迷惑",
+   "name": "暗影魔咒",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "2",
+   "effect": "给己方宠物加物攻、物防",
+   "formula": "己方宠物物攻 +(0.14+0.01Lv)×法攻+88Lv−68，物防 +一半；3+修为/12000 回合",
+   "lv11": "横排 3 只宠物"
+  },
+  {
+   "cls": "术士",
+   "xinfa": "迷惑",
+   "name": "梦魔咒",
+   "category": "转生",
+   "rage": "耗怒（BWIKI 称回怒同同生共死）【冲突】",
+   "prereq": "暗影魔咒 高等级",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "横排 5 个怪物/宠物昏睡（对人物无效），睡着回血，被打醒",
+   "formula": "敌横排 5 个怪物/宠物，不可闪避；修为高于目标时概率昏睡 5+修为/12000，每回合回 (1.45+0.05Lv)×法攻 生命，受伤提前醒",
+   "lv11": "—"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "慈悲",
+   "name": "慈悲咒",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体法术",
+   "formula": "(0.98+0.02Lv)×(法攻−30+50Lv)",
+   "lv11": "—"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "慈悲",
+   "name": "仙音化雨",
+   "category": "初始",
+   "rage": "回怒2类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "2",
+   "effect": "对己：解 debuff + 持续回血；对敌：驱散 buff",
+   "formula": "对己：解等级 ≤ 本技能等级的 debuff，3 回合每回合回 −51+70Lv+恢复；对敌：不可闪避，施放者修为 > 目标修为−96000 时，解等级 ≤ 本技能等级+3 的 buff",
+   "lv11": "竖排 2"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "慈悲",
+   "name": "沉水润心",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "1",
+   "effect": "2~4 目标治疗（10 级十字 4），可暴击",
+   "formula": "2~4 目标（10 级十字 4）回 (0.925+0.075Lv)×(法攻−30+50Lv)+目标恢复；可暴击（用物爆率），暴击回 (1.85+0.15Lv)×(…)×随机+恢复",
+   "lv11": "矩形 6"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "慈悲",
+   "name": "仙气护体",
+   "category": "转生",
+   "rage": "耗怒",
+   "prereq": "仙音化雨 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "受击时回血的 buff，可暴击",
+   "formula": "受击时回 (1.45+0.05Lv)×(法攻+70+230Lv)×随机+恢复；3+修为/12000 回合；可暴击（固定率），暴击 (2.9+0.1Lv)×(…)",
+   "lv11": "横排 5，持续 7+慈悲心怀等级/2"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "慈悲",
+   "name": "妙法莲华",
+   "category": "稀有（仙匣）",
+   "rage": "耗怒",
+   "prereq": "慈悲心法 ≥60",
+   "exp_index_n": "妙法公式",
+   "proficiency_weight": "—",
+   "effect": "复活；目标超出适用等级越多越容易失败",
+   "formula": "复活；目标在适用等级内 100% 成功，超出越多越容易失败；复活后回血回蓝 + 持续回血。【公式没公开】默认：回 30%+5%×Lv 生命 ⚙，超出适用等级每 1 级成功率 −2% ⚙",
+   "lv11": "—"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "怜悯",
+   "name": "天地极乐",
+   "category": "初始",
+   "rage": "回怒1类",
+   "prereq": "—",
+   "exp_index_n": "1",
+   "proficiency_weight": "3",
+   "effect": "单体法术",
+   "formula": "(0.98+0.02Lv)×(法攻−36+60Lv)",
+   "lv11": "—"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "怜悯",
+   "name": "圣灵附体",
+   "category": "初始",
+   "rage": "回怒2类",
+   "prereq": "—",
+   "exp_index_n": "2",
+   "proficiency_weight": "2",
+   "effect": "加物防、物攻、法攻、恢复、速度（随法攻）",
+   "formula": "物防 +[(0.114+0.006Lv)×法攻−12.4+22.4Lv]×随机；物攻/法攻/恢复 +其 1/2；速度 +其 1/3；3+修为/12000 回合",
+   "lv11": "横排 5，7+慈悲心怀/2"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "怜悯",
+   "name": "昊天罡气",
+   "category": "初始",
+   "rage": "回怒4类",
+   "prereq": "—",
+   "exp_index_n": "3",
+   "proficiency_weight": "1",
+   "effect": "护盾；≥6 级被普攻打破时反伤",
+   "formula": "护盾 (0.95+0.05Lv)×(法攻−45+75Lv)×随机，最多 3+修为/12000 回合；≥6 级护盾被普攻打破时，打破者受 0.05×(Lv−3+max(0,Lv−9))×护盾总量 固定伤害",
+   "lv11": "横排 5，7+慈悲心怀/2"
+  },
+  {
+   "cls": "修真",
+   "xinfa": "怜悯",
+   "name": "凝神聚气",
+   "category": "转生",
+   "rage": "耗怒",
+   "prereq": "圣灵附体 ≥7",
+   "exp_index_n": "转生公式",
+   "proficiency_weight": "—",
+   "effect": "加怒气，并让目标技能回怒 +78~98%",
+   "formula": "立即 +2.7+10.3Lv 怒气；使用技能回怒 +(78+2Lv)%；3+修为/12000 回合",
+   "lv11": "横排 5，7+慈悲心怀/2"
+  }
+ ],
+ "skill_rules": {
+  "book_exp": {
+   "normal": "150*m^2*n",
+   "rebirth": "30*(m+29)^2",
+   "miaofa": "750*(m+5)^2",
+   "scroll_mult": 0.8,
+   "secret_mult": 0.6666666666666666
+  },
+  "xinfa_req_normal": {
+   "value": "floor(10*(Lv-1)+1+2.5*(n-1))",
+   "placeholder": true,
+   "samples": [
+    "摄魂咒6级=迷惑51",
+    "沉水润心7级=慈悲66"
+   ]
+  },
+  "xinfa_req_rebirth": [
+   90,
+   96,
+   100,
+   103,
+   107,
+   110,
+   113,
+   116,
+   119,
+   122
+  ],
+  "rebirth_level_req": [
+   60,
+   70,
+   80,
+   90,
+   100,
+   110,
+   113,
+   116,
+   119,
+   122
+  ],
+  "miaofa_req": "慈悲 60 + 10*(Lv-1)",
+  "apply_level_normal": [
+   28,
+   52,
+   72,
+   88,
+   102,
+   114,
+   124,
+   132,
+   140,
+   148
+  ],
+  "apply_level_rebirth": [
+   90,
+   98,
+   106,
+   114,
+   122,
+   130,
+   138,
+   146,
+   150,
+   150
+  ],
+  "proficiency": {
+   "lv1_4": "8*m*(3n+8) per layer; 8 layers total 1184*m",
+   "lv5_10": "(n+1)*a; total 36a; a(weight1)=[80,200,320,600,800,1200]",
+   "rebirth_lv1": "15*(n+2); total 660",
+   "layers_to_next": 8,
+   "level_gap": 5
+  },
+  "random_mult": [
+   0.9,
+   1.1
+  ],
+  "shibo_tiers": {
+   "enough": "full",
+   "within5": "2 rounds, no prompt",
+   "over5": "1 round, prompt"
+  },
+  "lingxiu": {
+   "unlock": "一转100级 + 女娲(43,55)任务",
+   "cost": {
+    "value": {
+     "yuanshen": "50000*(lv+1)",
+     "exp": "10000000*(lv+1)"
+    },
+    "placeholder": true
+   },
+   "success": {
+    "value": "max(20%, 90%-4%*lv)",
+    "placeholder": true
+   },
+   "fail": "-1级（稳定剂可防）",
+   "wash_every_levels": 5,
+   "wash_cost_gold_liang": 10,
+   "reset_cost_gold_liang": 100,
+   "buffs": {
+    "value": [
+     "增伤",
+     "减伤",
+     "回血",
+     "回蓝",
+     "回怒",
+     "加速"
+    ],
+    "placeholder": true,
+    "note": "名称未公开，见截图#6"
+   }
+  }
+ },
+ "couple_skills": [
+  {
+   "name": "情意绵绵",
+   "req": "结婚"
+  },
+  {
+   "name": "情深似海",
+   "req": "亲密度>=3000"
+  },
+  {
+   "name": "同心同德",
+   "req": "亲密度>=5000"
+  }
+ ],
+ "rebirth": {
+  "first": {
+   "min_level": 75,
+   "item": "天书",
+   "final_item": "转生秘露（20瓶混元延寿露）",
+   "bonus_points": 10,
+   "refund": [
+    "潜力",
+    "心法经验"
+   ],
+   "exp_mult_after": 2,
+   "level_table": {
+    "75": 60,
+    "80": 63,
+    "85": 66.5,
+    "90": 70,
+    "95": 75,
+    "100": 80
+   },
+   "level_table_note": "公开样本；中间等级按总经验不变线性插值 ⚙",
+   "level_cap": {
+    "value": 139,
+    "conflict": "07073: 150"
+   }
+  },
+  "second": {
+   "typical_level": [
+    134,
+    135
+   ],
+   "result_level": [
+    125,
+    126
+   ],
+   "items": "迷魂谷残卷一~九 + 灵引符 → 天卷灵丹",
+   "bonus_points": {
+    "value": 10,
+    "placeholder": true
+   },
+   "aptitude_bonus": {
+    "value": "10%",
+    "placeholder": true
+   }
+  },
+  "third": {
+   "min_level": 162,
+   "item": "天赐祝福",
+   "result_level": 30,
+   "max_level": 179,
+   "npc": "幻想城 菩提子",
+   "alliances": [
+    "坚韧天选者",
+    "勇武天选者"
+   ],
+   "unlocks": [
+    "任意等级宠物/骑宠/装备",
+    "法宝",
+    "抗性面板",
+    "新地图 幻想城/碧琅水榭/冰天雪地"
+   ],
+   "alliance_skills": {
+    "value": "每联盟6个被动 1~10级",
+    "placeholder": true
+   },
+   "conflict": "视游网: 2800万技能经验 + 28亿元神 + 战神1000帮会经验×6"
+  }
+ },
+ "yuanshen": {
+  "min_level": 60,
+  "cap": {
+   "value": "level*200000",
+   "placeholder": true
+  },
+  "sources": {
+   "高除": 400000,
+   "特除": 600000,
+   "活跃度50": 3000,
+   "活跃度100": 5000,
+   "活力每点": [
+    1100,
+    2500
+   ]
+  },
+  "jingling_train": {
+   "below139": {
+    "normal": 30500,
+    "gold": 26000
+   },
+   "from139": {
+    "normal": 45000,
+    "gold": 39000
+   }
+  },
+  "tianzi": {
+   "cost": {
+    "value": {
+     "yuanshen": "2000*lv^2",
+     "silver_liang": "2*lv"
+    },
+    "placeholder": true
+   },
+   "skill_req_tianzi_level": {
+    "value": "5*L",
+    "placeholder": true
+   },
+   "damage": {
+    "value": "(1.0+0.08L)*(主攻+50+40L)*克制1.2",
+    "placeholder": true
+   },
+   "counter": {
+    "玄": "刺客",
+    "毒": "修真",
+    "火": "侠客",
+    "冰": "术士"
+   },
+   "skills": {
+    "侠客": [
+     "玄风刃",
+     "玄霸击",
+     "千军破"
+    ],
+    "刺客": [
+     "毒龙手",
+     "迷雾绝杀",
+     "绝佳时刻"
+    ],
+    "术士": [
+     "玄天心火",
+     "火神天将",
+     "疾风烈焰"
+    ],
+    "修真": [
+     "如履薄冰",
+     "神武冰旋",
+     "寒冰复生"
+    ]
+   },
+   "level_reqs": {
+    "first": [
+     114,
+     124,
+     132,
+     140,
+     148,
+     156,
+     164,
+     172
+    ],
+    "second_third": [
+     150,
+     156,
+     162,
+     168,
+     174,
+     180,
+     186,
+     192
+    ],
+    "erzhuan_lv1": 114,
+    "unit_note": "BWIKI 未注明，推测人物等级"
+   }
+  },
+  "diling": {
+   "elements": [
+    "玄",
+    "毒",
+    "火",
+    "冰"
+   ],
+   "reduction": {
+    "value": "1.5%*lv, cap 60%",
+    "placeholder": true
+   }
+  },
+  "jingmai": {
+   "channels": 8,
+   "points_per_channel": 6,
+   "layers_per_point": 10,
+   "cost": [
+    "技能经验",
+    "人物经验"
+   ],
+   "layer10_item": "大还丹",
+   "channel_names": {
+    "value": [
+     "任脉",
+     "督脉",
+     "冲脉",
+     "带脉",
+     "阴维脉",
+     "阳维脉",
+     "阴跷脉",
+     "阳跷脉"
+    ],
+    "placeholder": true
+   }
+  }
+ },
+ "badges": {
+  "model": "徽章ID→数量账本 + 兑换商店",
+  "kinds": [
+   "副本徽章",
+   "帮会徽章",
+   "朝云徽章",
+   "古墓徽章",
+   "精灵徽章",
+   "拼图徽章",
+   "迷之徽章",
+   "天空徽章",
+   "瑶池徽章",
+   "妖王徽章",
+   "五行徽章",
+   "结义徽章",
+   "活动徽章",
+   "活动之星徽章",
+   "移动徽章",
+   "嘉年华徽章",
+   "须弥徽章",
+   "成就徽章",
+   "挑战徽章",
+   "360消费徽章",
+   "330消费徽章",
+   "450消费徽章"
+  ],
+  "examples": [
+   {
+    "badge": "驱邪徽章(45级副本)",
+    "cost": 60,
+    "item": "蓝色喜洋羊"
+   },
+   {
+    "badge": "精灵徽章",
+    "cost": 20,
+    "item": "白精灵"
+   },
+   {
+    "badge": "活动徽章",
+    "cost": 4,
+    "item": "技能经验卷轴(2000~4000)"
+   },
+   {
+    "badge": "成就徽章",
+    "cost": 150,
+    "item": "圣阶内丹"
+   },
+   {
+    "badge": "360消费徽章",
+    "item": "史努比"
+   },
+   {
+    "badge": "330消费徽章",
+    "item": "五彩鸟"
+   },
+   {
+    "badge": "450消费徽章",
+    "item": "九戒"
+   }
+  ]
+ },
+ "pets": {
+  "slots": {
+   "initial": 2,
+   "quests": {
+    "20": "灵仙岛 李香香",
+    "40": "灵昌城 钟无烟",
+    "70": "坠龙城 越灵汐"
+   },
+   "item": "驭兽密录",
+   "max": 10
+  },
+  "capture": {
+   "items": {
+    "猎户之眼": 0.2,
+    "猎户之心": 0.4
+   },
+   "lock_soul_cards_silver_liang": {
+    "普通卡": 5,
+    "头领卡": 10,
+    "宝宝卡": 100
+   },
+   "special_items": {
+    "乾坤袋": "冰雪巨人~1/5、石人~1/15",
+    "混天绫": "红翼蝶女",
+    "幌金绳": "蚌精",
+    "缚妖索": "月海水妖",
+    "彩虹缚": "九尾"
+   },
+   "pet_island": {
+    "floors": {
+     "一层": 40,
+     "二层": 45,
+     "三层": 50,
+     "圣兽岭": 60
+    },
+    "rare_days": "周五~周日",
+    "rare_times": [
+     "11:30-13:30",
+     "17:30-21:30"
+    ]
+   },
+   "formula": {
+    "value": "clamp(base*(1.5-hp/maxhp)*lvmod + item, 1%, 95%)",
+    "placeholder": true,
+    "base": {
+     "普通": 0.4,
+     "头领": 0.15,
+     "稀有": 0.05
+    },
+    "mutation": {
+     "value": {
+      "普通": 0.01,
+      "头领": 0.05
+     },
+     "placeholder": true
+    }
+   }
+  },
+  "growth_tiers": {
+   "names": [
+    "普通",
+    "优秀",
+    "杰出",
+    "卓越",
+    "完美",
+    "超凡"
+   ],
+   "coeff": {
+    "value": {
+     "普通": 1.0,
+     "优秀": 1.2,
+     "杰出": 1.8,
+     "卓越": 2.6,
+     "完美": [
+      3.4,
+      4.0
+     ],
+     "超凡": "4.0+0.05*幻化度"
+    },
+    "placeholder": true
+   },
+   "official": "普通100%，完美400%，超凡最高460%"
+  },
+  "growth_formula": {
+   "value": "资质*成长系数*(1+悟性*1%)/3500 per level",
+   "placeholder": true
+  },
+  "free_points_per_level": 1,
+  "evolution_points_per_level": 5,
+  "mutation_aptitude_mult": 1.1,
+  "wuxing": {
+   "pill_caps": {
+    "低级": 7,
+    "中级": 12,
+    "高级": 20
+   },
+   "to20": "举世无双悟性丹",
+   "to25": "特级悟性丹（觉醒后）",
+   "carry_level_reduction": "悟性10后每2点-1",
+   "success": {
+    "value": "100%-4.5%*悟性",
+    "placeholder": true
+   }
+  },
+  "xiuwei": {
+   "initial_cap": 20,
+   "cap_per_level": 20,
+   "book_req": "200*(k-1)",
+   "milestones": {
+    "64000": "第2排内丹",
+    "120000": "不被碧琅水榭魅惑",
+    "138000": "第3排内丹",
+    "160000": "飞升/上限"
+   }
+  },
+  "lifespan": {
+   "potion_bonus": 200,
+   "battle_cost": {
+    "value": 1,
+    "placeholder": true
+   },
+   "death": {
+    "value": {
+     "loyalty": -5,
+     "life": -10
+    },
+    "placeholder": true
+   }
+  },
+  "loyalty": {
+   "food_bonus": 30,
+   "disobey": {
+    "value": "(60-忠诚)%",
+    "placeholder": true
+   }
+  },
+  "train": {
+   "normal_ratio": 0.3333333333333333,
+   "cap": {
+    "value": "资质*成长系数*等级/20000",
+    "placeholder": true
+   },
+   "cost": {
+    "value": {
+     "normal_silver_liang": 2,
+     "high_gold_liang": 5
+    },
+    "placeholder": true
+   }
+  },
+  "skills": {
+   "talent_rarity": {
+    "B": "常见",
+    "A": "罕见",
+    "S": "稀有"
+   },
+   "reroll": {
+    "神兽": "万化灵丹",
+    "非神兽": "万化秘露"
+   },
+   "single": "天赋精华",
+   "book_max": 10,
+   "lv11": "××之尘（30白银英雄令挑战 罗洋/罗雪/钱海/韦季/李斤斗/古楠长者）",
+   "likely_max": {
+    "value": 20,
+    "placeholder": true
+   },
+   "slots": {
+    "initial": {
+     "value": 5,
+     "placeholder": true
+    },
+    "scroll": "灵异秘卷 开到10",
+    "awaken": 11,
+    "ascend": 12
+   },
+   "comprehend": "智慧守护者之泪+混元延寿露+帮会声望；需绑定+空栏",
+   "forget": {
+    "value": "已有非天赋技能数*8%",
+    "placeholder": true
+   },
+   "known_value": "厚皮: 1级+10耐力, 每级+6"
+  },
+  "refining": {
+   "basic": {
+    "野性赐福": "丹药健体",
+    "战斗韧性": "丹药健体"
+   },
+   "combo": {
+    "智慧超群": "水灵润心",
+    "金丝软甲": "铁骨铮铮",
+    "硬甲壳": "铁骨铮铮",
+    "招架": "铁骨铮铮",
+    "火焰甲": "铁骨铮铮",
+    "仙侣宝衣": "铁骨铮铮",
+    "自然祝福": "霓裳羽衣",
+    "自然屏障": "霓裳羽衣",
+    "魔性毛皮": "霓裳羽衣",
+    "魔力鳞片": "霓裳羽衣",
+    "仙咒护符": "霓裳羽衣",
+    "智慧守护": "八卦护体"
+   },
+   "advanced": [
+    {
+     "source_skill": "身强体健（炼化）",
+     "pets": "迅猛狼、活力牛",
+     "recorded": "身强体健",
+     "prereq": "3 级生命祝福",
+     "learn": "地仙之体"
+    },
+    {
+     "source_skill": "灵气四溢（炼化）",
+     "pets": "灵动羊、灵巧兔",
+     "recorded": "灵气四溢",
+     "prereq": "3 级天生灵性",
+     "learn": "灵波流转"
+    },
+    {
+     "source_skill": "皮糙肉厚（炼化）",
+     "pets": "厚皮熊、钢铁蜥",
+     "recorded": "皮糙肉厚",
+     "prereq": "3 级天空守护（坚硬）",
+     "learn": "金丝战甲"
+    },
+    {
+     "source_skill": "斑斓法衣（炼化）",
+     "pets": "斑斓蛇、五彩蝶",
+     "recorded": "斑斓法衣",
+     "prereq": "3 级天空守护（抗魔）",
+     "learn": "七彩宝衣"
+    },
+    {
+     "source_skill": "天兵护卫（炼化）",
+     "pets": "神力虎、铁皮猪",
+     "recorded": "天兵护卫",
+     "prereq": "3 级大地守护（宽容）",
+     "learn": "天神护卫"
+    },
+    {
+     "source_skill": "天王护卫（炼化）",
+     "pets": "帅气猴、馋嘴鳄",
+     "recorded": "天王护卫",
+     "prereq": "6 级元素守护（狡诈）",
+     "learn": "天王护卫"
+    },
+    {
+     "source_skill": "五气朝元（炼化）",
+     "pets": "帅气猴、馋嘴鳄",
+     "recorded": "五气朝元",
+     "prereq": "6 级战斗智慧",
+     "learn": "五气朝元"
+    },
+    {
+     "source_skill": "健壮",
+     "pets": "武斗鸡、飞天鸦、火焰蛇、狂暴狼",
+     "recorded": "气血绵长",
+     "prereq": "1 级丹药健体",
+     "learn": "天神祝福"
+    },
+    {
+     "source_skill": "灵力庇佑",
+     "pets": "同上",
+     "recorded": "灵气逼人",
+     "prereq": "1 级水灵润心",
+     "learn": "三花聚顶"
+    },
+    {
+     "source_skill": "绝对防御 / 岩石外壳 / 黑暗视觉",
+     "pets": "同上",
+     "recorded": "连环锁甲",
+     "prereq": "1 级铁骨铮铮",
+     "learn": "刀枪不入"
+    },
+    {
+     "source_skill": "防护结界 / 魔化鳞甲 / 法术洞察 / 焰灵护体",
+     "pets": "同上",
+     "recorded": "五彩宝衣",
+     "prereq": "1 级霓裳羽衣",
+     "learn": "天衣无缝"
+    },
+    {
+     "source_skill": "战斗信仰",
+     "pets": "同上",
+     "recorded": "天将护卫",
+     "prereq": "1 级八卦护体",
+     "learn": "无懈可击"
+    },
+    {
+     "source_skill": "白银盔甲",
+     "pets": "帅气猴、馋嘴鳄",
+     "recorded": "两仪战甲",
+     "prereq": "6 级财富守护（坚韧）",
+     "learn": "两仪战甲"
+    },
+    {
+     "source_skill": "白银魔甲",
+     "pets": "帅气猴、馋嘴鳄",
+     "recorded": "凝神化虚",
+     "prereq": "6 级财富守护（抗魔）",
+     "learn": "凝神化虚"
+    },
+    {
+     "source_skill": "白银祝福",
+     "pets": "帅气猴、馋嘴鳄",
+     "recorded": "仙丹炼体",
+     "prereq": "6 级生命庇佑",
+     "learn": "仙丹炼体"
+    }
+   ],
+   "known_values": {
+    "丹药健体6级": "+5000生命",
+    "天神祝福6级": "+15000生命"
+   },
+   "success": {
+    "value": "80% - 10%*(lv-1)",
+    "placeholder": true
+   }
+  },
+  "evolution": {
+   "items": "进化之灵 + 1~6辅助宠 (+金子)",
+   "aptitude_reward_until": {
+    "value": 13,
+    "conflict": "曦月: 12"
+   },
+   "points_per_level": 5,
+   "success": {
+    "value": {
+     "base": {
+      "1-3": 0.6,
+      "4-6": 0.4,
+      "7-9": 0.25,
+      "10-13": 0.15,
+      "14+": 0.1
+     },
+     "per_helper": 0.05,
+     "per_gold_liang": 0.01,
+     "gold_max": 0.3,
+     "cap": 0.95
+    },
+    "placeholder": true
+   },
+   "reward": {
+    "value": "辅助宠该项资质*1%",
+    "placeholder": true
+   },
+   "helpers": [
+    {
+     "stat": "强壮",
+     "pets": "巨蝎",
+     "obtain": "锁魂卡捕捉   等级：67~70",
+     "cap": 8150,
+     "cap_label": "强壮",
+     "actual_capture_cap": 8130,
+     "mutant_cap": 8965,
+     "ref_mutant": 8500
+    },
+    {
+     "stat": "强壮",
+     "pets": "宝石蝎",
+     "obtain": "交易行购买",
+     "cap": 8370,
+     "cap_label": "强壮",
+     "mutant_cap": 9207,
+     "ref_mutant": 8700
+    },
+    {
+     "stat": "强壮",
+     "pets": "白虎/雪狼",
+     "obtain": "千针雪林捕捉  等级：76~80",
+     "cap": 8480,
+     "cap_label": "强壮",
+     "actual_capture_cap": 8000,
+     "mutant_cap": 8965,
+     "ref_mutant": 8800
+    },
+    {
+     "stat": "强壮",
+     "pets": "冰雪暴熊",
+     "obtain": "咆哮谷捕捉  等级：81~85",
+     "cap": 8700,
+     "cap_label": "强壮",
+     "actual_capture_cap": 8200,
+     "mutant_cap": 9570,
+     "ref_mutant": 9100
+    },
+    {
+     "stat": "强壮",
+     "pets": "史努比",
+     "obtain": "360消费徽章",
+     "cap": 9800,
+     "cap_label": "强壮",
+     "ref_normal": 9300,
+     "mutant_cap": 10780,
+     "ref_mutant": 10250
+    },
+    {
+     "stat": "智力",
+     "pets": "红翼蝶女",
+     "obtain": "密霞谷 混天绫（舞修罗 回梦徽章）捕捉  等级：65~70",
+     "cap": 5620,
+     "cap_label": "智力",
+     "ref_normal": 4800
+    },
+    {
+     "stat": "智力",
+     "pets": "赤脚医者",
+     "obtain": "宠物岛二层捕捉   等级：46~50",
+     "cap": 6500,
+     "cap_label": "智力",
+     "actual_capture_cap": 6100,
+     "mutant_cap": 7150,
+     "ref_mutant": 6800
+    },
+    {
+     "stat": "智力",
+     "pets": "蚌精",
+     "obtain": "遗忘废墟  幌金绳（七彩贝壳兑换）捕捉  等级：70~75",
+     "cap": 6610,
+     "cap_label": "智力",
+     "ref_normal": 5600
+    },
+    {
+     "stat": "智力",
+     "pets": "精灵鼠/小狐仙",
+     "obtain": "交易行购买/周年庆烟花",
+     "cap": 7270,
+     "cap_label": "智力",
+     "ref_normal": 6500,
+     "mutant_cap": 7997,
+     "ref_mutant": 7400
+    },
+    {
+     "stat": "智力",
+     "pets": "白羊座/水平座/双鱼座",
+     "obtain": "交易行购买",
+     "cap": 7820,
+     "cap_label": "智力",
+     "ref_normal": 7000,
+     "mutant_cap": 8602,
+     "ref_mutant": 8100
+    },
+    {
+     "stat": "智力",
+     "pets": "朱雀",
+     "obtain": "交易行购买",
+     "cap": 8150,
+     "cap_label": "耐力",
+     "ref_normal": 7000,
+     "mutant_cap": 8950,
+     "ref_mutant": 8400
+    },
+    {
+     "stat": "智力",
+     "pets": "青鸾",
+     "obtain": "交易行购买",
+     "cap": 8700,
+     "cap_label": "智力",
+     "ref_normal": 7800,
+     "mutant_cap": 9570,
+     "ref_mutant": 9000
+    },
+    {
+     "stat": "智力",
+     "pets": "玉玲珑",
+     "obtain": "交易行购买",
+     "cap": 9250,
+     "cap_label": "智力",
+     "ref_normal": 8300,
+     "mutant_cap": 10175,
+     "ref_mutant": 9500
+    },
+    {
+     "stat": "智力",
+     "pets": "五彩鸟",
+     "obtain": "330消费徽章",
+     "cap": 9800,
+     "cap_label": "智力",
+     "ref_normal": 9300,
+     "mutant_cap": 10780,
+     "ref_mutant": 10200
+    },
+    {
+     "stat": "耐力",
+     "pets": "青牛头领",
+     "obtain": "锁魂卡捕捉   等级：46~50",
+     "cap": 7160,
+     "cap_label": "耐力",
+     "actual_capture_cap": 6800,
+     "mutant_cap": 7876,
+     "ref_mutant": 7500
+    },
+    {
+     "stat": "耐力",
+     "pets": "炖炖",
+     "obtain": "白银VIP副本捕捉   等级：1",
+     "cap": 8150,
+     "cap_label": "耐力",
+     "actual_capture_cap": 7500,
+     "mutant_cap": 8950,
+     "ref_mutant": 8400
+    },
+    {
+     "stat": "耐力",
+     "pets": "冰雪巨人",
+     "obtain": "咆哮谷 乾坤袋（666L银）捕捉 成功率约为1/5等级：80~85",
+     "cap": 9800,
+     "cap_label": "耐力",
+     "ref_normal": 9200,
+     "mutant_cap": 10780,
+     "ref_mutant": 10200
+    },
+    {
+     "stat": "耐力",
+     "pets": "九戒",
+     "obtain": "450消费徽章",
+     "cap": 10900,
+     "cap_label": "耐力",
+     "ref_normal": 9700,
+     "mutant_cap": 11990,
+     "ref_mutant": 11000
+    },
+    {
+     "stat": "信仰",
+     "pets": "赤脚医者",
+     "obtain": "宠物岛二层捕捉   等级：46~50",
+     "cap": 4850,
+     "cap_label": "信仰",
+     "actual_capture_cap": 4350
+    },
+    {
+     "stat": "信仰",
+     "pets": "白羊/双鱼/水瓶座，魔蝎/射手座",
+     "obtain": "交易行购买",
+     "cap": 5290,
+     "cap_label": "信仰",
+     "ref_normal": 4700
+    },
+    {
+     "stat": "信仰",
+     "pets": "盗贼、剑侠",
+     "obtain": "宠物岛二层捕捉   等级：46~50",
+     "cap": 5400,
+     "cap_label": "信仰",
+     "actual_capture_cap": 4800
+    },
+    {
+     "stat": "信仰",
+     "pets": "蚌精",
+     "obtain": "遗忘废墟  幌金绳（七彩贝壳兑换）捕捉  等级：70~75",
+     "cap": 5510,
+     "cap_label": "信仰",
+     "ref_normal": 4700
+    },
+    {
+     "stat": "信仰",
+     "pets": "月海水妖",
+     "obtain": "迷雾海 缚妖索（天音上徽章兑换）捕捉  等级：40~45",
+     "cap": 5620,
+     "cap_label": "信仰",
+     "ref_normal": 4800
+    },
+    {
+     "stat": "信仰",
+     "pets": "鹤仙人",
+     "obtain": "交易行购买",
+     "cap": 7050,
+     "cap_label": "信仰",
+     "ref_normal": 6300
+    },
+    {
+     "stat": "信仰",
+     "pets": "云鹤",
+     "obtain": "交易行购买",
+     "cap": 7600,
+     "cap_label": "信仰",
+     "ref_normal": 6900,
+     "mutant_cap": 8360,
+     "ref_mutant": 7850
+    },
+    {
+     "stat": "信仰",
+     "pets": "石人",
+     "obtain": "埋骨之地 乾坤袋（666L银）捕捉 成功率约为1/15 等级：76~80",
+     "cap": 9250,
+     "cap_label": "信仰",
+     "ref_normal": 8300,
+     "mutant_cap": 10175,
+     "ref_mutant": 9500
+    },
+    {
+     "stat": "敏捷",
+     "pets": "大乌鸦头领",
+     "obtain": "锁魂卡捕捉   等级：36~40",
+     "cap": 7160,
+     "cap_label": "敏捷",
+     "actual_capture_cap": 6800,
+     "mutant_cap": 7876,
+     "ref_mutant": 7500
+    },
+    {
+     "stat": "敏捷",
+     "pets": "魔蝎座/射手座",
+     "obtain": "交易行购买",
+     "cap": 6940,
+     "cap_label": "敏捷",
+     "ref_normal": 6250
+    },
+    {
+     "stat": "敏捷",
+     "pets": "夕夕兔",
+     "obtain": "交易行购买",
+     "cap": 7600,
+     "cap_label": "敏捷",
+     "ref_normal": 6800,
+     "mutant_cap": 8360,
+     "ref_mutant": 7850
+    },
+    {
+     "stat": "敏捷",
+     "pets": "鬼魅蛇姬",
+     "obtain": "蛇姬豪华礼包",
+     "cap": 9250,
+     "cap_label": "敏捷",
+     "ref_normal": 8300,
+     "mutant_cap": 10175,
+     "ref_mutant": 9500
+    },
+    {
+     "stat": "敏捷",
+     "pets": "炽天使",
+     "obtain": "炽天使豪华礼包",
+     "cap": 9800,
+     "cap_label": "强壮",
+     "ref_normal": 9000,
+     "mutant_cap": 10780,
+     "ref_mutant": 10200
+    }
+   ]
+  },
+  "huanhua": {
+   "req": "完美+悟性17+凝魄石+5锭",
+   "item": "离魂石",
+   "per_level": 0.05,
+   "max": 13,
+   "max_rate": 4.6,
+   "fail_drop": false,
+   "success": {
+    "value": "60%-3%*lv+1%*(悟性-17)",
+    "placeholder": true
+   }
+  },
+  "awaken": {
+   "req": {
+    "player": ">100",
+    "pet": ">=100",
+    "growth": "完美",
+    "wuxing": ">=18",
+    "skills": 10,
+    "item": "醒悟丹",
+    "no": [
+     "内丹",
+     "武装",
+     "契约"
+    ]
+   },
+   "new_level": "floor((L-100)/2+80)",
+   "extra_slot": 1,
+   "wuxing_cap": 25
+  },
+  "ascend": {
+   "req": {
+    "huanhua": 13,
+    "wuxing": 24,
+    "xiuwei_cap": 160000,
+    "item": "飞升石"
+   },
+   "level_cap": 180,
+   "extra_slot": "飞升技能栏"
+  },
+  "fusion": {
+   "req": "飞升后、同种、副宠删光技能",
+   "max_times": 3,
+   "normal": {
+    "cost_silver_liang": 200,
+    "rate": 0.05
+   },
+   "high": {
+    "cost_gold_liang": 200,
+    "rate": 0.08
+   },
+   "bonus": {
+    "value": "副宠资质5%",
+    "placeholder": true
+   }
+  },
+  "neidan": {
+   "rows": [
+    "圣阶",
+    "天灵",
+    "圣元"
+   ],
+   "shapes": {
+    "三角": [
+     "物攻",
+     "敏捷资质",
+     "防御"
+    ],
+    "方": [
+     "物爆",
+     "强壮资质",
+     "无视物防"
+    ],
+    "圆": [
+     "法爆",
+     "智力资质",
+     "无视法防"
+    ],
+    "菱": [
+     "法攻",
+     "信仰资质",
+     "法防"
+    ]
+   },
+   "colors": [
+    "白",
+    "绿",
+    "蓝",
+    "紫",
+    "橙",
+    "红(飞升后)"
+   ],
+   "max_star": 15,
+   "stones": {
+    "1-3星": 1.0,
+    "4-7星": 1.0,
+    "超级": 0.5,
+    "至尊": 1.0
+   },
+   "remove_exp_loss": 0.1,
+   "formula": {
+    "value": "base*(1+0.04*修炼等级)*(1+0.08*星)",
+    "placeholder": true
+   }
+  },
+  "armament": {
+   "pieces": {
+    "突袭": [
+     "触角",
+     "獠牙",
+     "利爪"
+    ],
+    "伪装": [
+     "兽纹",
+     "甲壳",
+     "毛皮"
+    ],
+    "体型": [
+     "尖刺",
+     "翎羽",
+     "尾鞭"
+    ]
+   },
+   "merge": {
+    "绿→蓝": 0.9,
+    "蓝→紫": 0.75,
+    "紫→橙": 0.5
+   },
+   "activate_gold": 20,
+   "mutate_gold": 2,
+   "repair": "灵兽符",
+   "skins_per_piece": 25,
+   "quality_coeff": {
+    "value": {
+     "白": 1,
+     "绿": 1.3,
+     "蓝": 1.7,
+     "紫": 2.2,
+     "橙": 3.0
+    },
+    "placeholder": true
+   }
+  },
+  "combos": {
+   "example": "炖炖组合 +8000宠物生命",
+   "list": {
+    "value": [],
+    "placeholder": true
+   }
+  },
+  "atlas": {
+   "max": 48,
+   "per_level": {
+    "value": "+5‰全属性",
+    "placeholder": true
+   }
+  },
+  "battle": {
+   "active": 1,
+   "bind_required": true,
+   "level_gap_exp": 10,
+   "no_exp_if_above_player": 5,
+   "summon_limit": {
+    "value": 3,
+    "placeholder": true
+   }
+  },
+  "catalog": [
+   {
+    "name": "飞羽夏神",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "飞羽至尊宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      2700,
+      4300
+     ],
+     "强壮": [
+      2250,
+      3750
+     ],
+     "信仰": [
+      3600,
+      5400
+     ],
+     "敏捷": [
+      2700,
+      4300
+     ],
+     "智力": [
+      4950,
+      7050
+     ]
+    },
+    "talents": [
+     {
+      "name": "龙鳞甲胄",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "魔化鳞甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "龙形圣体",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力及生命值上限上升"
+     },
+     {
+      "name": "元素守护（狡诈）",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升\r\n            物理闪避上升"
+     },
+     {
+      "name": "风魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成法术伤害"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "幻灵龙爪",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标早成法术攻击"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "龙息乱",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "目标十字范围造成法术伤害并附加随机状态"
+     },
+     {
+      "name": "元素祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "法力吸取（法术）",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "单体法术攻击并吸取法力值"
+     }
+    ]
+   },
+   {
+    "name": "粉红喜洋羊",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "喜洋羊宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      2500,
+      4850
+     ],
+     "强壮": [
+      4500,
+      6500
+     ],
+     "信仰": [
+      2700,
+      4300
+     ],
+     "敏捷": [
+      2700,
+      4300
+     ],
+     "智力": [
+      1800,
+      3200
+     ]
+    },
+    "talents": [
+     {
+      "name": "冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并有几率同时攻击临近目标"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害并有几率附带混乱效果"
+     },
+     {
+      "name": "红色尖角",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "喜洋羊之声",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对敌全体造成法术伤害并附加减速效果"
+     },
+     {
+      "name": "祈福",
+      "rarity": "A",
+      "type": "辅助技能",
+      "effect": "使用后恢复自身生命值"
+     },
+     {
+      "name": "红色犄角",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御及法术防御上升"
+     },
+     {
+      "name": "蓝色尖角",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "黑色三连星",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命、法力、速度上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     }
+    ]
+   },
+   {
+    "name": "朱雀",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "灵樨至尊富贵宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1800,
+      3200
+     ],
+     "强壮": [
+      1800,
+      3200
+     ],
+     "信仰": [
+      3150,
+      4850
+     ],
+     "敏捷": [
+      3600,
+      5400
+     ],
+     "智力": [
+      5850,
+      8150
+     ]
+    },
+    "talents": [
+     {
+      "name": "烈焰祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "法力灼烧",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体法术攻击同时消耗目标法力和生命值"
+     },
+     {
+      "name": "焰灵护体",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "浴火重生",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "死亡后自动复活"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "火焰甲胄",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "火焰迅捷",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "速度上升"
+     },
+     {
+      "name": "火焰环绕",
+      "rarity": "S",
+      "type": "辅助技能",
+      "effect": "为友军增加一个可以对物理攻击进行反伤状态"
+     },
+     {
+      "name": "火魔爆",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对敌方全体造成法术伤害并附带灼烧效果"
+     }
+    ]
+   },
+   {
+    "name": "白虎",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "灵樨至尊富贵宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      2250,
+      3750
+     ],
+     "强壮": [
+      4500,
+      6500
+     ],
+     "信仰": [
+      1800,
+      3200
+     ],
+     "敏捷": [
+      4050,
+      5950
+     ],
+     "智力": [
+      3600,
+      5400
+     ]
+    },
+    "talents": [
+     {
+      "name": "利爪猛击",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "元素守护（抗魔）",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "元素守护（坚硬）",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "元素力量（敏锐）",
+      "rarity": "A",
+      "type": "辅助技能",
+      "effect": "对自身释放使其速度和物理闪避上升"
+     },
+     {
+      "name": "元素力量（洞察）",
+      "rarity": "A",
+      "type": "辅助技能",
+      "effect": "对自身释放使其法术攻击及法术闪避上升"
+     },
+     {
+      "name": "元素祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "元素守护（狂野）",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理暴击上升"
+     },
+     {
+      "name": "元素守护（狡诈）",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理和法术闪避上升"
+     },
+     {
+      "name": "元素守护（复仇）",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "对目标造成物理伤害后随机附加一次法术攻击"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     }
+    ]
+   },
+   {
+    "name": "熊猫武神",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "活动获得",
+    "aptitude": {
+     "耐力": [
+      3600,
+      5400
+     ],
+     "强壮": [
+      5850,
+      8150
+     ],
+     "信仰": [
+      1800,
+      3200
+     ],
+     "敏捷": [
+      3150,
+      4850
+     ],
+     "智力": [
+      1800,
+      3200
+     ]
+    },
+    "talents": [
+     {
+      "name": "断月十字斩",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标及周围造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击力升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "战斗智慧",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "战斗艺术",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击及物理暴击上升"
+     },
+     {
+      "name": "战斗信仰",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理闪避及法术闪避上升"
+     },
+     {
+      "name": "战斗韧性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力及物理防御上升"
+     },
+     {
+      "name": "战斗狂热",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理暴击及速度上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "智慧守护",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "有此技能后受到的一部分伤害会被法力值分担"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "智慧祷言",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "战斗中消耗寿命时自身法力值恢复"
+     }
+    ]
+   },
+   {
+    "name": "黑龙",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "新年至尊宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      3150,
+      4850
+     ],
+     "强壮": [
+      4500,
+      6500
+     ],
+     "信仰": [
+      2700,
+      4300
+     ],
+     "敏捷": [
+      3150,
+      4850
+     ],
+     "智力": [
+      2700,
+      4300
+     ]
+    },
+    "talents": [
+     {
+      "name": "龙鳞甲胄",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "魔化鳞甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "龙形圣体",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力及生命值上限上升"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主要技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "风魔爆",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "敌全体造成法术伤害"
+     },
+     {
+      "name": "龙息乱",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "目标十字范围造成法术伤害并附加随机状态"
+     }
+    ]
+   },
+   {
+    "name": "小金龙",
+    "family": "神兽系",
+    "kind": "神兽",
+    "habitat": "无",
+    "obtain": "宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      3150,
+      4850
+     ],
+     "强壮": [
+      2700,
+      4300
+     ],
+     "信仰": [
+      2700,
+      4300
+     ],
+     "敏捷": [
+      3150,
+      4850
+     ],
+     "智力": [
+      4500,
+      6500
+     ]
+    },
+    "talents": [
+     {
+      "name": "龙鳞甲胄",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "魔化鳞甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "龙形圣体",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力及生命值上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "龙息乱",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "目标十字范围造成法术伤害并附加随机状态"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "灵幻龙爪",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对敌方目标造成法术伤害"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "风魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成法术伤害"
+     }
+    ]
+   },
+   {
+    "name": "鸳鸯",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "浪漫七夕宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1080,
+      2320
+     ],
+     "强壮": [
+      1080,
+      2320
+     ],
+     "信仰": [
+      2430,
+      3970
+     ],
+     "敏捷": [
+      2430,
+      3970
+     ],
+     "智力": [
+      2430,
+      3970
+     ]
+    },
+    "talents": [
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "利爪猛击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标早成物理伤害"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害并有几率附带混乱效果"
+     }
+    ]
+   },
+   {
+    "name": "阿兹猫",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "周年庆典宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1620,
+      2980
+     ],
+     "强壮": [
+      3420,
+      5180
+     ],
+     "信仰": [
+      990,
+      2210
+     ],
+     "敏捷": [
+      5220,
+      7380
+     ],
+     "智力": [
+      990,
+      2210
+     ]
+    },
+    "talents": [
+     {
+      "name": "魔性毛皮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "利爪猛击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害并有几率附带混乱效果"
+     }
+    ]
+   },
+   {
+    "name": "波波熊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "周年庆典宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      2790,
+      4410
+     ],
+     "强壮": [
+      5220,
+      7380
+     ],
+     "信仰": [
+      990,
+      2210
+     ],
+     "敏捷": [
+      2160,
+      3640
+     ],
+     "智力": [
+      990,
+      2210
+     ]
+    },
+    "talents": [
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "利爪猛击",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害并有几率附带混乱效果"
+     }
+    ]
+   },
+   {
+    "name": "喳喳鸟",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "夏至缤纷宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1620,
+      2980
+     ],
+     "强壮": [
+      3420,
+      5180
+     ],
+     "信仰": [
+      990,
+      2210
+     ],
+     "敏捷": [
+      5220,
+      7380
+     ],
+     "智力": [
+      450,
+      2210
+     ]
+    },
+    "talents": [
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "利爪猛击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "美眉蛇",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "夏至缤纷宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      3420,
+      5180
+     ],
+     "强壮": [
+      3420,
+      5180
+     ],
+     "信仰": [
+      990,
+      2210
+     ],
+     "敏捷": [
+      3420,
+      5180
+     ],
+     "智力": [
+      990,
+      2210
+     ]
+    },
+    "talents": [
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "魔力鳞片",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "毒性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并附带中毒效果"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "唐伯虎",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "试炼之地副本徽章换取",
+    "aptitude": {
+     "耐力": [
+      3240,
+      4960
+     ],
+     "强壮": [
+      5850,
+      8150
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      2610,
+      4190
+     ],
+     "智力": [
+      630,
+      1770
+     ]
+    },
+    "talents": [
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     }
+    ]
+   },
+   {
+    "name": "月野兔",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "三元高粽宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1620,
+      2980
+     ],
+     "强壮": [
+      3420,
+      5180
+     ],
+     "信仰": [
+      990,
+      2210
+     ],
+     "敏捷": [
+      5220,
+      7380
+     ],
+     "智力": [
+      990,
+      2210
+     ]
+    },
+    "talents": [
+     {
+      "name": "魔性毛皮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害，并有机率附带混乱效果"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     }
+    ]
+   },
+   {
+    "name": "水滨蟹",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "三元高粽宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      3420,
+      5180
+     ],
+     "强壮": [
+      3420,
+      5180
+     ],
+     "信仰": [
+      990,
+      2210
+     ],
+     "敏捷": [
+      3420,
+      5180
+     ],
+     "智力": [
+      990,
+      2210
+     ]
+    },
+    "talents": [
+     {
+      "name": "硬甲壳",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "注魔水冲",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对地方全体造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     }
+    ]
+   },
+   {
+    "name": "真•蓝色喜洋羊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "09年4月充值活动奖励",
+    "aptitude": {
+     "耐力": [
+      2520,
+      4080
+     ],
+     "强壮": [
+      5490,
+      7710
+     ],
+     "信仰": [
+      810,
+      1990
+     ],
+     "敏捷": [
+      3150,
+      4850
+     ],
+     "智力": [
+      810,
+      1990
+     ]
+    },
+    "talents": [
+     {
+      "name": "冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并有几率同时攻击临近目标"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "喜洋羊之声",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对敌全体造成法术伤害并附加减速效果"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害并有几率附带混乱效果"
+     },
+     {
+      "name": "粉红之种",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命、法力、速度上升"
+     },
+     {
+      "name": "祈福",
+      "rarity": "A",
+      "type": "辅助技能",
+      "effect": "使用后恢复自身生命值"
+     },
+     {
+      "name": "蓝色犄角",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御及法术防御上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     }
+    ]
+   },
+   {
+    "name": "蓝色喜洋羊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "60个驱邪徽章换取",
+    "aptitude": {
+     "耐力": [
+      2340,
+      3860
+     ],
+     "强壮": [
+      5310,
+      7490
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      2970,
+      4630
+     ],
+     "智力": [
+      630,
+      1770
+     ]
+    },
+    "talents": [
+     {
+      "name": "冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并有几率同时攻击临近目标"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "喜洋羊之声",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对敌全体造成法术伤害并附加减速效果"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成物理伤害并有几率附带混乱效果"
+     },
+     {
+      "name": "粉红之种",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命、法力、速度上升"
+     },
+     {
+      "name": "祈福",
+      "rarity": "A",
+      "type": "辅助技能",
+      "effect": "使用后恢复自身生命值"
+     },
+     {
+      "name": "蓝色犄角",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御及法术防御上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     }
+    ]
+   },
+   {
+    "name": "迷你白羊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "新手任务奖励",
+    "aptitude": {
+     "耐力": [
+      900,
+      2100
+     ],
+     "强壮": [
+      1440,
+      2760
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      1710,
+      3090
+     ],
+     "智力": [
+      270,
+      1330
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "迷你灰野兔",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "新手任务奖励",
+    "aptitude": {
+     "耐力": [
+      900,
+      2100
+     ],
+     "强壮": [
+      1440,
+      2760
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      1710,
+      3090
+     ],
+     "智力": [
+      270,
+      1330
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "迷你猫",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "新手任务奖励",
+    "aptitude": {
+     "耐力": [
+      900,
+      2100
+     ],
+     "强壮": [
+      1440,
+      2760
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      1710,
+      3090
+     ],
+     "智力": [
+      270,
+      1330
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "白羊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "东影月森林",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      4230,
+      6720
+     ],
+     "强壮": [
+      2880,
+      4850
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      1440,
+      2870
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "灰野兔",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "北影月森林",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      1440,
+      2870
+     ],
+     "强壮": [
+      2880,
+      4850
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      4230,
+      6720
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "魔性毛皮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "猫",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "北影月森林",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      2880,
+      4850
+     ],
+     "强壮": [
+      2880,
+      4850
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      2880,
+      4850
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "魔性毛皮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "利爪猛击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "棕熊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "东影月森林",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      2340,
+      4190
+     ],
+     "强壮": [
+      4230,
+      6720
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      1890,
+      3530
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "斗鸡",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "新手福音宝箱获得",
+    "aptitude": {
+     "耐力": [
+      1440,
+      2870
+     ],
+     "强壮": [
+      2880,
+      4850
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      4230,
+      6720
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "利爪猛击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "草蛇",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "黑色水域",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      2880,
+      4850
+     ],
+     "强壮": [
+      2880,
+      4850
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      2880,
+      4850
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "魔力鳞片",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "毒性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并附带中毒效果"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "黑钳蟹",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "黑色水域",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      2880,
+      4850
+     ],
+     "强壮": [
+      2880,
+      4850
+     ],
+     "信仰": [
+      450,
+      1660
+     ],
+     "敏捷": [
+      2880,
+      4850
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "硬甲壳",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力值上限上升"
+     },
+     {
+      "name": "注魔水冲",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     }
+    ]
+   },
+   {
+    "name": "黑水鳄鱼",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "迷梦泽",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      2970,
+      4960
+     ],
+     "强壮": [
+      2970,
+      4960
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      2970,
+      4960
+     ],
+     "智力": [
+      540,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "魔力鳞片",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "螃蟹宝宝（原火钳蟹）",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "黑色水域",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      2970,
+      4960
+     ],
+     "强壮": [
+      2970,
+      4960
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      2970,
+      4960
+     ],
+     "智力": [
+      540,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "硬甲壳",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "火色斗鸡",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "新手福音宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1530,
+      2980
+     ],
+     "强壮": [
+      2970,
+      4960
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      4500,
+      6940
+     ],
+     "智力": [
+      540,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "螃蟹头领（原金钳蟹）",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "黑色水域",
+    "obtain": "捕捉获得",
+    "aptitude": {
+     "耐力": [
+      3150,
+      5180
+     ],
+     "强壮": [
+      3150,
+      5180
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      3150,
+      5180
+     ],
+     "智力": [
+      540,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "硬甲壳",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "注魔水冲",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "大乌鸦",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "新手福音宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      1530,
+      3090
+     ],
+     "强壮": [
+      3150,
+      5180
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      4680,
+      7160
+     ],
+     "智力": [
+      540,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "青牛",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      4680,
+      7160
+     ],
+     "强壮": [
+      3150,
+      5180
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      1530,
+      3090
+     ],
+     "智力": [
+      450,
+      1660
+     ]
+    },
+    "talents": [
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "银狼",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      2700,
+      4630
+     ],
+     "强壮": [
+      4860,
+      7490
+     ],
+     "信仰": [
+      540,
+      1770
+     ],
+     "敏捷": [
+      2160,
+      3860
+     ],
+     "智力": [
+      540,
+      1770
+     ]
+    },
+    "talents": [
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "蝎子",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      3060,
+      4960
+     ],
+     "强壮": [
+      5490,
+      8150
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      2430,
+      4190
+     ],
+     "智力": [
+      630,
+      1770
+     ]
+    },
+    "talents": [
+     {
+      "name": "硬甲壳",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "毒性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并附带中毒效果"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "蜘蛛",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      3690,
+      5840
+     ],
+     "强壮": [
+      3690,
+      5840
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      3690,
+      5840
+     ],
+     "智力": [
+      630,
+      1770
+     ]
+    },
+    "talents": [
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "毒性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并附带中毒效果"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "蜈蚣",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      3690,
+      5840
+     ],
+     "强壮": [
+      3690,
+      5840
+     ],
+     "信仰": [
+      630,
+      1770
+     ],
+     "敏捷": [
+      3690,
+      5840
+     ],
+     "智力": [
+      630,
+      1770
+     ]
+    },
+    "talents": [
+     {
+      "name": "硬甲壳",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "毒性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害并附带中毒效果"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "野猪",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "时雨山",
+    "obtain": "青瓷炼妖壶中几率获得",
+    "aptitude": {
+     "耐力": [
+      5850,
+      8150
+     ],
+     "强壮": [
+      3600,
+      5400
+     ],
+     "信仰": [
+      450,
+      1550
+     ],
+     "敏捷": [
+      900,
+      2100
+     ],
+     "智力": [
+      450,
+      1550
+     ]
+    },
+    "talents": [
+     {
+      "name": "野蛮冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "灵猿",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "时雨山",
+    "obtain": "青瓷炼妖壶中几率获得",
+    "aptitude": {
+     "耐力": [
+      2250,
+      3750
+     ],
+     "强壮": [
+      4500,
+      6500
+     ],
+     "信仰": [
+      450,
+      1550
+     ],
+     "敏捷": [
+      3600,
+      5400
+     ],
+     "智力": [
+      900,
+      2100
+     ]
+    },
+    "talents": [
+     {
+      "name": "野蛮冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "魔性毛皮",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "猛虎",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "时雨山",
+    "obtain": "青瓷炼妖壶中几率获得",
+    "aptitude": {
+     "耐力": [
+      3600,
+      5400
+     ],
+     "强壮": [
+      5400,
+      7600
+     ],
+     "信仰": [
+      900,
+      2100
+     ],
+     "敏捷": [
+      2700,
+      4300
+     ],
+     "智力": [
+      1800,
+      3200
+     ]
+    },
+    "talents": [
+     {
+      "name": "利爪猛击",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击并附加流血效果"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "撕咬",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "云鹤",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "时雨山",
+    "obtain": "青瓷炼妖壶中几率获得",
+    "aptitude": {
+     "耐力": [
+      2700,
+      4300
+     ],
+     "强壮": [
+      3150,
+      4850
+     ],
+     "信仰": [
+      5400,
+      7600
+     ],
+     "敏捷": [
+      900,
+      2100
+     ],
+     "智力": [
+      3600,
+      5400
+     ]
+    },
+    "talents": [
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "五色鹿",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "时雨山",
+    "obtain": "青瓷炼妖壶中几率获得",
+    "aptitude": {
+     "耐力": [
+      3600,
+      5400
+     ],
+     "强壮": [
+      4950,
+      7050
+     ],
+     "信仰": [
+      3150,
+      4850
+     ],
+     "敏捷": [
+      1800,
+      3200
+     ],
+     "智力": [
+      1350,
+      2650
+     ]
+    },
+    "talents": [
+     {
+      "name": "野蛮冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "魔性毛皮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上限上升"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "小金牛",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "无",
+    "obtain": "灵樨祈福宝箱“贺岁版”中随机获得",
+    "aptitude": {
+     "耐力": [
+      6300,
+      8700
+     ],
+     "强壮": [
+      1800,
+      3200
+     ],
+     "信仰": [
+      2250,
+      3750
+     ],
+     "敏捷": [
+      450,
+      1550
+     ],
+     "智力": [
+      450,
+      1550
+     ]
+    },
+    "talents": [
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "自然屏障",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术防御上升"
+     },
+     {
+      "name": "牛气冲天",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "嗜血狂暴",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理爆击上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术上限上升"
+     },
+     {
+      "name": "野性赐福",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "冰雪巨熊",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "咆哮谷",
+    "obtain": "捕捉",
+    "aptitude": {
+     "耐力": [
+      3240,
+      5290
+     ],
+     "强壮": [
+      6120,
+      8700
+     ],
+     "信仰": [
+      720,
+      1880
+     ],
+     "敏捷": [
+      2700,
+      4410
+     ],
+     "智力": [
+      720,
+      1880
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "白虎",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "千针雪林",
+    "obtain": "捕捉",
+    "aptitude": {
+     "耐力": [
+      3240,
+      5180
+     ],
+     "强壮": [
+      5850,
+      8480
+     ],
+     "信仰": [
+      630,
+      1880
+     ],
+     "敏捷": [
+      2610,
+      4300
+     ],
+     "智力": [
+      630,
+      1880
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "雪狼",
+    "family": "野兽系",
+    "kind": "野兽",
+    "habitat": "千针雪林",
+    "obtain": "捕捉",
+    "aptitude": {
+     "耐力": [
+      3240,
+      5180
+     ],
+     "强壮": [
+      5850,
+      8480
+     ],
+     "信仰": [
+      630,
+      1880
+     ],
+     "敏捷": [
+      2610,
+      4300
+     ],
+     "智力": [
+      630,
+      1880
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "处女座",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "4300个魔军盔甲碎片换取",
+    "aptitude": {
+     "耐力": [
+      2790,
+      4410
+     ],
+     "强壮": [
+      2790,
+      4410
+     ],
+     "信仰": [
+      2790,
+      4410
+     ],
+     "敏捷": [
+      2790,
+      4410
+     ],
+     "智力": [
+      2790,
+      4410
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "智慧守护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "由此技能后受到的一部分伤害会被法力值分担"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "劫火",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成法术伤害"
+     },
+     {
+      "name": "法术漩涡",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成法术伤害"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "法术风暴",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对目标及其周围共6个目标造成法术伤害"
+     }
+    ]
+   },
+   {
+    "name": "狮子座",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "4300个魔军盔甲碎片换取",
+    "aptitude": {
+     "耐力": [
+      4230,
+      6170
+     ],
+     "强壮": [
+      4230,
+      6170
+     ],
+     "信仰": [
+      720,
+      1880
+     ],
+     "敏捷": [
+      2070,
+      3530
+     ],
+     "智力": [
+      2790,
+      4410
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "智慧守护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "由此技能后受到的一部分伤害会被法力值分担"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对十字范围内造成物理伤害，并有几率附带混乱效果"
+     }
+    ]
+   },
+   {
+    "name": "巨蟹座",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "4300个魔军盔甲碎片换取",
+    "aptitude": {
+     "耐力": [
+      4230,
+      6170
+     ],
+     "强壮": [
+      4230,
+      6170
+     ],
+     "信仰": [
+      720,
+      1880
+     ],
+     "敏捷": [
+      2070,
+      3530
+     ],
+     "智力": [
+      2790,
+      4410
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "智慧守护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "由此技能后受到的一部分伤害会被法力值分担"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "注魔水冲",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "野性穿刺",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标造成物理伤害"
+     },
+     {
+      "name": "水魔爆",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "敌全体造成物理伤害"
+     }
+    ]
+   },
+   {
+    "name": "双子座",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "4300个魔军盔甲碎片换取",
+    "aptitude": {
+     "耐力": [
+      720,
+      1880
+     ],
+     "强壮": [
+      720,
+      1880
+     ],
+     "信仰": [
+      3510,
+      5290
+     ],
+     "敏捷": [
+      4860,
+      6940
+     ],
+     "智力": [
+      4230,
+      6170
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "涌泉",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "使用法术攻击1~2个目标"
+     },
+     {
+      "name": "法力吸取（法术）",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成法术伤害并吸取一定得法力值"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "智慧守护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "由此技能后受到的一部分伤害会被法力值分担"
+     },
+     {
+      "name": "招架",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "法力精通",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "智力上升"
+     }
+    ]
+   },
+   {
+    "name": "金牛座",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "4300个魔军盔甲碎片换取",
+    "aptitude": {
+     "耐力": [
+      4230,
+      6170
+     ],
+     "强壮": [
+      4230,
+      6170
+     ],
+     "信仰": [
+      720,
+      1770
+     ],
+     "敏捷": [
+      2070,
+      3530
+     ],
+     "智力": [
+      2790,
+      4410
+     ]
+    },
+    "talents": [
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "野性冲撞",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标眩晕"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "智力超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "红色犄角",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术防御上升，物理防御上升"
+     },
+     {
+      "name": "三倍速冲击",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围内造成物理伤害，并有几率附带混乱效果"
+     },
+     {
+      "name": "智慧守护",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "有此技能后受到的一部分伤害会被法力值分担"
+     }
+    ]
+   },
+   {
+    "name": "甄族少女",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "老版本新手宠物",
+    "aptitude": {
+     "耐力": [
+      1800,
+      3200
+     ],
+     "强壮": [
+      3600,
+      5400
+     ],
+     "信仰": [
+      450,
+      1550
+     ],
+     "敏捷": [
+      4050,
+      5950
+     ],
+     "智力": [
+      900,
+      2100
+     ]
+    },
+    "talents": [
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "神秘少女",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "灵樨宝箱圣诞版中随机获得",
+    "aptitude": {
+     "耐力": [
+      900,
+      2100
+     ],
+     "强壮": [
+      450,
+      1550
+     ],
+     "信仰": [
+      1800,
+      3200
+     ],
+     "敏捷": [
+      4050,
+      5950
+     ],
+     "智力": [
+      3600,
+      5400
+     ]
+    },
+    "talents": [
+     {
+      "name": "法术洞察",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "法力吸取（法术）",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体法术攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承担伤害"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "不留手",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "黑色水域",
+    "obtain": "江洋大盗任务中捕捉",
+    "aptitude": {
+     "耐力": [
+      4500,
+      6500
+     ],
+     "强壮": [
+      450,
+      1550
+     ],
+     "信仰": [
+      1800,
+      3200
+     ],
+     "敏捷": [
+      1800,
+      3200
+     ],
+     "智力": [
+      450,
+      1550
+     ]
+    },
+    "talents": []
+   },
+   {
+    "name": "无名女侠",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "宠物灵樨宝箱中获得",
+    "aptitude": {
+     "耐力": [
+      900,
+      2100
+     ],
+     "强壮": [
+      4050,
+      5950
+     ],
+     "信仰": [
+      3600,
+      5400
+     ],
+     "敏捷": [
+      900,
+      2100
+     ],
+     "智力": [
+      2250,
+      3750
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "家传宝剑",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "吸血魔刃",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取生命值"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "招架",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "格斗少女",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "08年市场活动获得",
+    "aptitude": {
+     "耐力": [
+      3600,
+      5400
+     ],
+     "强壮": [
+      3600,
+      5400
+     ],
+     "信仰": [
+      900,
+      2100
+     ],
+     "敏捷": [
+      1350,
+      2650
+     ],
+     "智力": [
+      2250,
+      3750
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "女剑灵",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "使用在积分商城中购买的剑灵召唤符,灵樨富贵/至尊宝箱随机获得",
+    "aptitude": {
+     "耐力": [
+      3600,
+      5400
+     ],
+     "强壮": [
+      4950,
+      7050
+     ],
+     "信仰": [
+      1350,
+      2650
+     ],
+     "敏捷": [
+      3600,
+      5400
+     ],
+     "智力": [
+      1350,
+      2650
+     ]
+    },
+    "talents": [
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击力上升"
+     },
+     {
+      "name": "传家宝剑",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "吸血魔刃",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取生命值"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "密探（黑水刺客）",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "古道",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      2970,
+      4630
+     ],
+     "强壮": [
+      2970,
+      4630
+     ],
+     "信仰": [
+      540,
+      1660
+     ],
+     "敏捷": [
+      1530,
+      2870
+     ],
+     "智力": [
+      1980,
+      3420
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "吸血魔刃",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取生命值"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上上限升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     }
+    ]
+   },
+   {
+    "name": "迷梦泽术士",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      1800,
+      3200
+     ],
+     "强壮": [
+      450,
+      1550
+     ],
+     "信仰": [
+      2700,
+      4850
+     ],
+     "敏捷": [
+      450,
+      1550
+     ],
+     "智力": [
+      4950,
+      7600
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "涌泉",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "使用法术攻击1~2个目标"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法术吸取（法术）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体法术攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "迷梦泽侍卫",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      2700,
+      4300
+     ],
+     "强壮": [
+      4950,
+      7600
+     ],
+     "信仰": [
+      450,
+      1550
+     ],
+     "敏捷": [
+      450,
+      1550
+     ],
+     "智力": [
+      2250,
+      3750
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "吸血魔刃",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取生命值"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "拜火教徒",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      2700,
+      4300
+     ],
+     "强壮": [
+      450,
+      1550
+     ],
+     "信仰": [
+      2250,
+      4300
+     ],
+     "敏捷": [
+      450,
+      1550
+     ],
+     "智力": [
+      4950,
+      7050
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "劫火",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体法术攻击"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法力吸取（法术）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体法术攻击并吸取法力值"
+     },
+     {
+      "name": "火魔爆",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "敌全体法术攻击"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "黄金港剑士",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "黄金港口",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      900,
+      2650
+     ],
+     "强壮": [
+      3600,
+      5950
+     ],
+     "信仰": [
+      3600,
+      5400
+     ],
+     "敏捷": [
+      900,
+      2100
+     ],
+     "智力": [
+      1800,
+      3750
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "家传宝剑",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "吸血魔刃",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取生命值"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "招架",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "黄金港侍卫",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      3150,
+      4850
+     ],
+     "强壮": [
+      3150,
+      5400
+     ],
+     "信仰": [
+      3600,
+      5400
+     ],
+     "敏捷": [
+      900,
+      2100
+     ],
+     "智力": [
+      450,
+      1550
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "吸血魔刃",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取生命值"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "黄金港拳师",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "黄金港口",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      450,
+      1550
+     ],
+     "强壮": [
+      4500,
+      7600
+     ],
+     "信仰": [
+      3150,
+      4850
+     ],
+     "敏捷": [
+      1350,
+      3200
+     ],
+     "智力": [
+      1350,
+      2650
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "健壮",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "野蛮冲撞",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击有几率令目标晕眩"
+     },
+     {
+      "name": "天生蛮力",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理攻击上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合法力值恢复"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "法力吸取（物理）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "落月医者",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      2700,
+      4300
+     ],
+     "强壮": [
+      900,
+      2100
+     ],
+     "信仰": [
+      3150,
+      4850
+     ],
+     "敏捷": [
+      450,
+      1550
+     ],
+     "智力": [
+      4500,
+      6500
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "招架",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "生生不息",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友恢复生命值"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力值"
+     },
+     {
+      "name": "九转回魂",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "可以将已经死亡的友方目标复活"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法力吸取（法术）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体法术攻击并吸取法力值"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "落月修真者",
+    "family": "人形系",
+    "kind": "人形",
+    "habitat": "无",
+    "obtain": "魔灵神兵宝箱中随机获得",
+    "aptitude": {
+     "耐力": [
+      2250,
+      3750
+     ],
+     "强壮": [
+      450,
+      1550
+     ],
+     "信仰": [
+      3600,
+      5400
+     ],
+     "敏捷": [
+      450,
+      1550
+     ],
+     "智力": [
+      4950,
+      7050
+     ]
+    },
+    "talents": [
+     {
+      "name": "金丝软甲",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "泉涌",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "使用法术攻击1~2个目标"
+     },
+     {
+      "name": "法术洞察",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术闪避上升"
+     },
+     {
+      "name": "冥想",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "每回合恢复法力值"
+     },
+     {
+      "name": "法术精通",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法术攻击上升"
+     },
+     {
+      "name": "援护",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "为目标队友承受伤害"
+     },
+     {
+      "name": "健壮",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "耐力上升"
+     },
+     {
+      "name": "法力吸取（法术）",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "单体法术攻击并吸取法力值"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "九转回魂",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "可以将已经死亡的友方目标复活"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     }
+    ]
+   },
+   {
+    "name": "胖球",
+    "family": "精灵系",
+    "kind": "精灵",
+    "habitat": "无",
+    "obtain": "购买仙宠祝福获得",
+    "aptitude": {
+     "耐力": [
+      1530,
+      2870
+     ],
+     "强壮": [
+      1260,
+      2540
+     ],
+     "信仰": [
+      3150,
+      4850
+     ],
+     "敏捷": [
+      540,
+      1660
+     ],
+     "智力": [
+      3960,
+      5840
+     ]
+    },
+    "talents": [
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "仙侣宝衣",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "仙咒护符",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "法术漩涡",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对十字范围造成法术伤害"
+     },
+     {
+      "name": "灵力庇护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "震雷霹雳",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对目标及其周围共6个目标造成法术伤害"
+     },
+     {
+      "name": "万法归宗",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术爆击上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "智力上升"
+     }
+    ]
+   },
+   {
+    "name": "红翼蝶女",
+    "family": "精灵系",
+    "kind": "精灵",
+    "habitat": "密霞谷",
+    "obtain": "使用混天绫捕捉",
+    "aptitude": {
+     "耐力": [
+      1530,
+      2870
+     ],
+     "强壮": [
+      1080,
+      2320
+     ],
+     "信仰": [
+      2970,
+      4630
+     ],
+     "敏捷": [
+      540,
+      1660
+     ],
+     "智力": [
+      3780,
+      5620
+     ]
+    },
+    "talents": [
+     {
+      "name": "幻法迷心",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "降低目标及其周围共6个目标的速度和物理攻击力"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "仙侣宝衣",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "仙咒护符",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "法术漩涡",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成法术伤害"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "灵力庇护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "万法归宗",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术爆击上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "离火燎原",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对目标及其周围共6个目标造成法术伤害"
+     }
+    ]
+   },
+   {
+    "name": "丘比特",
+    "family": "精灵系",
+    "kind": "精灵",
+    "habitat": "无",
+    "obtain": "灵樨宝箱柔情版中随机获得",
+    "aptitude": {
+     "耐力": [
+      1350,
+      2650
+     ],
+     "强壮": [
+      900,
+      2100
+     ],
+     "信仰": [
+      2700,
+      4300
+     ],
+     "敏捷": [
+      3600,
+      5400
+     ],
+     "智力": [
+      4950,
+      7050
+     ]
+    },
+    "talents": [
+     {
+      "name": "盲目的爱",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "令单体目标受到晕眩状态持续1~3回合"
+     },
+     {
+      "name": "一见钟情",
+      "rarity": "B",
+      "type": "主动技能",
+      "effect": "对目标造成法术伤害并有几率附带晕眩效果"
+     },
+     {
+      "name": "长寿",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命值上限上升"
+     }
+    ]
+   },
+   {
+    "name": "包子小仙",
+    "family": "精灵系",
+    "kind": "精灵",
+    "habitat": "无",
+    "obtain": "暂无",
+    "aptitude": {
+     "耐力": [
+      3150,
+      4850
+     ],
+     "强壮": [
+      3150,
+      4850
+     ],
+     "信仰": [
+      1800,
+      3200
+     ],
+     "敏捷": [
+      2700,
+      4300
+     ],
+     "智力": [
+      1800,
+      3200
+     ]
+    },
+    "talents": [
+     {
+      "name": "仙侣宝衣",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "仙咒护符",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术漩涡",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成法术伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "灵力庇护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术风暴",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对目标及周围6个目标造成法术伤害"
+     },
+     {
+      "name": "万法归宗",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术爆击上升"
+     }
+    ]
+   },
+   {
+    "name": "包子仙",
+    "family": "精灵系",
+    "kind": "精灵",
+    "habitat": "无",
+    "obtain": "30级后灵昌城黄一凡处领取",
+    "aptitude": {
+     "耐力": [
+      1080,
+      2320
+     ],
+     "强壮": [
+      1080,
+      2320
+     ],
+     "信仰": [
+      2430,
+      3970
+     ],
+     "敏捷": [
+      2430,
+      3970
+     ],
+     "智力": [
+      2430,
+      3970
+     ]
+    },
+    "talents": [
+     {
+      "name": "仙侣宝衣",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "生命祝福",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "生命上限上升"
+     },
+     {
+      "name": "仙咒护符",
+      "rarity": "B",
+      "type": "被动技能",
+      "effect": "物理防御上升"
+     },
+     {
+      "name": "智慧超群",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "智力上升"
+     },
+     {
+      "name": "法术漩涡",
+      "rarity": "A",
+      "type": "主动技能",
+      "effect": "对十字范围造成法术伤害"
+     },
+     {
+      "name": "天生灵性",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "灵力庇护",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "法力上限上升"
+     },
+     {
+      "name": "长寿",
+      "rarity": "A",
+      "type": "被动技能",
+      "effect": "寿命上限上升"
+     },
+     {
+      "name": "法术风暴",
+      "rarity": "S",
+      "type": "主动技能",
+      "effect": "对目标及其周围6个目标造成法术伤害"
+     },
+     {
+      "name": "万法归宗",
+      "rarity": "S",
+      "type": "被动技能",
+      "effect": "法术爆击上升"
+     }
+    ]
+   }
+  ],
+  "monsters_uncapturable": [
+   "猫妖",
+   "魔族精兵",
+   "魔族铁甲兵",
+   "魔族妖兽",
+   "魔族战狼",
+   "傀儡",
+   "幽魂",
+   "多头怪",
+   "魔军污染者",
+   "水魅"
+  ]
+ },
+ "mounts": {
+  "unlock": "一转",
+  "contract_max": 2,
+  "points_per_level": 2,
+  "skill_tiers": [
+   "橙",
+   "紫",
+   "蓝",
+   "绿",
+   "白"
+  ],
+  "skill_items": [
+   "凝神丹",
+   "风雷丹",
+   "明光丹",
+   "灵幻丹"
+  ],
+  "focus_cap": 3,
+  "skill_min_effective_lv": 2,
+  "soul": {
+   "qualities": [
+    "白",
+    "绿",
+    "蓝",
+    "紫",
+    "橙"
+   ],
+   "max_level": 10,
+   "feed_exp": {
+    "白": {
+     "value": 5,
+     "placeholder": true
+    },
+    "绿": 20,
+    "蓝": 50,
+    "紫": 400,
+    "橙": 800
+   },
+   "summon_true_immortal_gold_liang": 5
+  },
+  "player_bonus": {
+   "value": "骑宠一级属性*5%",
+   "placeholder": true
+  },
+  "contract_bonus": {
+   "value": "契约宠一级属性*10%",
+   "placeholder": true
+  }
+ },
+ "others": {
+  "jingling": {
+   "fusion_coeff": "0.84-0.01X",
+   "full_fusion": {
+    "atk": 750,
+    "speed": 210,
+    "hpmp": 5000,
+    "defense": 450
+   },
+   "awaken": {
+    "cost_gold": 50,
+    "steps": [
+     [
+      6,
+      0.2
+     ],
+     [
+      5,
+      0.1
+     ],
+     [
+      9,
+      0.05
+     ]
+    ],
+    "total": 2.15
+   }
+  },
+  "fabao": {
+   "unlock": "三转",
+   "upgrade_item": "印记之魂",
+   "per_tier": 15,
+   "max_tier": {
+    "value": 10,
+    "placeholder": true
+   }
+  },
+  "marriage": {
+   "value": "男女组队 亲密度>=1000 520两银 月老",
+   "placeholder": true
+  },
+  "sworn": {
+   "size": [
+    3,
+    8
+   ],
+   "min_level": 41,
+   "intimacy": 101,
+   "items": [
+    "金兰香",
+    "桃园酒",
+    "八拜案"
+   ],
+   "npc": "结义使者(65,22)",
+   "fit_init": 200,
+   "fit_weekly": -50
+  },
+  "guild_martial": {
+   "entry": "帮会使者→使用帮会科技",
+   "activity_req": 3000,
+   "cost": [
+    "人物经验",
+    "元魄"
+   ],
+   "one_full": "约690亿经验",
+   "yuanpo_sources": {
+    "上古神器碎片": 3250,
+    "失落的锻造法整页": 19000,
+    "醒悟丹": 50000
+   },
+   "grid": {
+    "value": "10级×10星, 每星+0.5%",
+    "placeholder": true
+   }
+  },
+  "titles": {
+   "npc": "皇城 姜太后",
+   "bonus": {
+    "value": "1%~5%",
+    "placeholder": true
+   }
+  },
+  "vitality": {
+   "yuanshen_per_point": [
+    1100,
+    2500
+   ],
+   "cap": {
+    "value": 1000,
+    "placeholder": true
+   },
+   "regen_per_hour": {
+    "value": 10,
+    "placeholder": true
+   }
+  }
+ },
+ "combat": {
+  "command_seconds": 25,
+  "auto_rounds": 25,
+  "order": "速度降序",
+  "commands": [
+   "攻击",
+   "技能",
+   "道具",
+   "防御",
+   "召唤",
+   "捕捉",
+   "逃跑"
+  ],
+  "grid": {
+   "value": "2排×5列",
+   "placeholder": true
+  },
+  "events": {
+   "稳固": "第1回合双防×5",
+   "偷袭": "第1回合敌方不能行动",
+   "再动": "再执行一次不额外消耗",
+   "击飞": "死亡被打飞",
+   "破防": {
+    "value": 0.5,
+    "placeholder": true
+   },
+   "瞄准": "必中"
+  },
+  "statuses": [
+   "眩晕",
+   "混乱",
+   "昏睡",
+   "中毒",
+   "灼烧",
+   "冻伤",
+   "虚弱",
+   "迟缓",
+   "破甲",
+   "嘲讽",
+   "沉默",
+   "流血",
+   "衰竭",
+   "隐身",
+   "冰系易伤",
+   "侠义之心",
+   "仙气"
+  ],
+  "rage": {
+   "attacker": {
+    "crit": 10,
+    "target_defend": 15,
+    "target_dodge": 30,
+    "normal": 5
+   },
+   "defender": {
+    "defend_hit": 15,
+    "dodge": 20,
+    "counter": 10
+   },
+   "skill_classes": "1~4类；2类=1类×2…",
+   "class1_base": {
+    "value": 5,
+    "placeholder": true
+   },
+   "cost": {
+    "value": "30+5*Lv",
+    "placeholder": true
+   },
+   "start": {
+    "value": 0,
+    "placeholder": true
+   }
+  },
+  "physical_damage": {
+   "value": "max(物攻*rand(0.9,1.1) - 物防*0.5, 物攻*0.1)",
+   "placeholder": true
+  },
+  "magic_damage": {
+   "value": "max(技能基础 - 法防*0.5, 技能基础*0.1)",
+   "placeholder": true
+  },
+  "defend_mult": {
+   "value": 0.5,
+   "placeholder": true
+  },
+  "dodge": {
+   "value": "物闪/(物闪+攻方等级*10), cap 40%",
+   "placeholder": true
+  },
+  "crit": {
+   "value": "物爆/(物爆+目标等级*15), cap 50%, x1.5",
+   "placeholder": true
+  },
+  "counter_mult": {
+   "value": 0.8,
+   "placeholder": true
+  },
+  "escape": {
+   "value": "50% + (我速-敌最高速)/敌最高速*50%, clamp 10%~95%",
+   "placeholder": true
+  }
+ }
+}

@@ -1,0 +1,13 @@
+*.env
+.env*
+*.log
+*.zip
+*.docx
+*.doc
+node_modules/
+screenshots/
+art/
+_brief/
+docs/src/
+*.db
+*.sqlite

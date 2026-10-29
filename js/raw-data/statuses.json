@@ -1,0 +1,19 @@
+{
+  "_comment": "mods=属性乘区；dot/hot 每回合；control 控制类；debuff 可被清音诀驱散",
+  "stun": {"name": "眩晕", "control": true, "debuff": true},
+  "confuse": {"name": "混乱", "control": true, "debuff": true},
+  "taunt": {"name": "被激怒", "debuff": true},
+  "poison": {"name": "中毒", "dot": true, "debuff": true},
+  "burn": {"name": "灼烧", "dot": true, "debuff": true},
+  "toxin": {"name": "烈毒", "dot": true, "debuff": true, "escalate": 0.5},
+  "frostbite": {"name": "冻伤", "debuff": true, "mods": {"spd": 0.8, "mdef": 0.85}},
+  "weak": {"name": "虚弱", "debuff": true, "mods": {"patk": 0.8, "matk": 0.8}},
+  "slow": {"name": "迟缓", "debuff": true, "mods": {"spd": 0.7}},
+  "armor_break": {"name": "破甲", "debuff": true, "mods": {"pdef": 0.7}},
+  "earth_guard": {"name": "岩甲", "mods": {"pdef": 1.2, "spd": 1.15}},
+  "shadow": {"name": "影魔附体", "mods": {"patk": 1.25, "matk": 1.25, "pdef": 1.25}},
+  "blessing": {"name": "圣灵护佑", "mods": {"patk": 1.15, "matk": 1.15, "pdef": 1.15, "mdef": 1.15, "spd": 1.15, "pcrit": 1.15, "mcrit": 1.15}},
+  "hot": {"name": "持续治疗", "hot": true},
+  "shield": {"name": "罡气护盾"},
+  "defend": {"name": "防御"}
+}

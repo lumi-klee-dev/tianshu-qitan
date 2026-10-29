@@ -1,0 +1,1186 @@
+{
+ "_meta": {
+  "version": "0.1",
+  "date": "2026-10-27",
+  "note": "_status: confirmed=有来源; inferred=推测默认值，可调参。详见 装备与打造系统规格.md"
+ },
+ "slots": {
+  "weapon": {
+   "name": "武器",
+   "count": 1
+  },
+  "head": {
+   "name": "头饰",
+   "count": 1,
+   "armor": true
+  },
+  "body": {
+   "name": "衣服",
+   "count": 1,
+   "armor": true
+  },
+  "legs": {
+   "name": "裤子",
+   "count": 1,
+   "armor": true
+  },
+  "belt": {
+   "name": "腰带",
+   "count": 1,
+   "armor": true
+  },
+  "boots": {
+   "name": "鞋子",
+   "count": 1,
+   "armor": true
+  },
+  "shoulder": {
+   "name": "护肩",
+   "count": 1
+  },
+  "cape": {
+   "name": "披风",
+   "count": 1
+  },
+  "accessory": {
+   "name": "饰品",
+   "count": 4
+  },
+  "bracelet": {
+   "name": "手镯",
+   "count": 2
+  },
+  "ring": {
+   "name": "戒指",
+   "count": 2,
+   "_status": "open_question_Q1"
+  }
+ },
+ "set_slots": [
+  "head",
+  "body",
+  "legs",
+  "belt",
+  "boots",
+  "shoulder",
+  "cape",
+  "accessory"
+ ],
+ "weapon_by_class_gender": {
+  "侠客": {
+   "男": "刀",
+   "女": "双剑"
+  },
+  "刺客": {
+   "男": "链刃",
+   "女": "鞭"
+  },
+  "术士": {
+   "男": "扇",
+   "女": "古琴"
+  },
+  "修真": {
+   "男": "仙剑",
+   "女": "飞轮"
+  }
+ },
+ "grades": [
+  {
+   "id": "fan",
+   "name": "凡品",
+   "lv": [
+    1,
+    19
+   ],
+   "_status": "inferred"
+  },
+  {
+   "id": "liang",
+   "name": "良品",
+   "lv": [
+    20,
+    39
+   ],
+   "_status": "inferred"
+  },
+  {
+   "id": "shang",
+   "name": "上品",
+   "lv": [
+    40,
+    59
+   ],
+   "_status": "confirmed"
+  },
+  {
+   "id": "jing",
+   "name": "精品",
+   "lv": [
+    60,
+    79
+   ],
+   "_status": "confirmed"
+  },
+  {
+   "id": "ji",
+   "name": "极品",
+   "lv": [
+    80,
+    99
+   ],
+   "_status": "confirmed"
+  },
+  {
+   "id": "ling",
+   "name": "灵品",
+   "lv": [
+    100,
+    119
+   ],
+   "_status": "confirmed"
+  },
+  {
+   "id": "xuan",
+   "name": "玄品",
+   "lv": [
+    120,
+    139
+   ],
+   "_status": "confirmed"
+  },
+  {
+   "id": "shen",
+   "name": "神品",
+   "lv": [
+    140,
+    160
+   ],
+   "_status": "confirmed"
+  },
+  {
+   "id": "juexing",
+   "name": "觉醒",
+   "lv": null,
+   "_status": "confirmed"
+  }
+ ],
+ "tiers": [
+  {
+   "id": "broken",
+   "name": "破碎",
+   "mat_grade": 5,
+   "base_mult": 0.6
+  },
+  {
+   "id": "normal",
+   "name": "普通",
+   "mat_grade": 4,
+   "base_mult": 1.0
+  },
+  {
+   "id": "fine",
+   "name": "优秀",
+   "mat_grade": 3,
+   "base_mult": 1.15
+  },
+  {
+   "id": "perfect",
+   "name": "完美",
+   "mat_grade": 2,
+   "base_mult": 1.3
+  },
+  {
+   "id": "radiant",
+   "name": "光芒",
+   "mat_grade": 1,
+   "base_mult": 1.5
+  }
+ ],
+ "_tiers_status": "order confirmed; mult inferred",
+ "colors": [
+  {
+   "id": "white",
+   "name": "白",
+   "affixes": 0
+  },
+  {
+   "id": "green",
+   "name": "绿",
+   "affixes": 2
+  },
+  {
+   "id": "blue",
+   "name": "蓝",
+   "affixes": 3
+  },
+  {
+   "id": "purple",
+   "name": "紫",
+   "affixes": 4
+  },
+  {
+   "id": "orange",
+   "name": "橙",
+   "affixes": 5
+  }
+ ],
+ "affix_pool": [
+  "强壮",
+  "耐力",
+  "敏捷",
+  "智力",
+  "信仰",
+  "HP上限",
+  "MP上限",
+  "速度",
+  "防御",
+  "法术防",
+  "物理攻击",
+  "法术攻击",
+  "物理命中",
+  "物理闪避",
+  "物理爆击",
+  "法术命中",
+  "法术闪避",
+  "法术爆击",
+  "恢复",
+  "怒气"
+ ],
+ "rare_affixes_reforge_only": [
+  "爆击",
+  "忽视物防",
+  "忽视法防",
+  "韧性"
+ ],
+ "aux_material_bias": {
+  "布料": "HP上限",
+  "矿石": "法术防",
+  "金属锭": "防御",
+  "木材": "速度",
+  "皮革": "MP上限",
+  "精华": "物理攻击/法术攻击"
+ },
+ "hidden_affixes_until_bound": true,
+ "item_instance_schema": {
+  "uid": "str",
+  "template": "str",
+  "grade": "grade.id",
+  "tier": "tier.id",
+  "color": "color.id",
+  "bound": "bool",
+  "unique": "bool",
+  "durability": [
+   650,
+   650
+  ],
+  "req": {
+   "level": 0,
+   "class": "全职业",
+   "gender": null,
+   "rebirth": 0,
+   "attr": {}
+  },
+  "base": {},
+  "affixes": [
+   {
+    "stat": "",
+    "value": 0
+   }
+  ],
+  "bind_attr": {
+   "stat": "",
+   "value": 0
+  },
+  "spirit_attrs": [],
+  "enchant": {
+   "type": "pdef|mdef",
+   "level": 0
+  },
+  "stars": 0,
+  "mingke": 0,
+  "holes": [
+   {
+    "color": "pink|purple|blue|yellow|dual",
+    "gem": null,
+    "gem_lv": 0,
+    "carve": null
+   }
+  ],
+  "max_holes": 10,
+  "can_kaiguang": false,
+  "set_id": null,
+  "awaken_lv": null
+ },
+ "hole_colors": {
+  "pink": {
+   "name": "粉红",
+   "gems": [
+    "tian_meng",
+    "tian_ji",
+    "tian_shou",
+    "tian_you",
+    "tian_su"
+   ],
+   "new_hole_weight": 0.15
+  },
+  "purple": {
+   "name": "淡紫",
+   "gems": [
+    "tian_yong",
+    "tian_sun"
+   ],
+   "new_hole_weight": 0.15
+  },
+  "blue": {
+   "name": "天蓝",
+   "gems": [
+    "tian_bai",
+    "tian_tui"
+   ],
+   "new_hole_weight": 0.35
+  },
+  "yellow": {
+   "name": "鹅黄",
+   "gems": [
+    "tian_xian",
+    "tian_wei",
+    "tian_ying",
+    "tian_gui",
+    "tian_man",
+    "tian_gu"
+   ],
+   "new_hole_weight": 0.35
+  }
+ },
+ "_hole_weights_status": "inferred",
+ "max_same_color_holes": 6,
+ "gems": {
+  "tian_meng": {
+   "name": "天猛石",
+   "stat": "强壮",
+   "hole": "pink",
+   "values": [
+    8,
+    17,
+    33,
+    66,
+    119,
+    178,
+    232
+   ],
+   "_status": "confirmed"
+  },
+  "tian_ji": {
+   "name": "天机石",
+   "stat": "智力",
+   "hole": "pink",
+   "values": [
+    8,
+    17,
+    33,
+    66,
+    119,
+    178,
+    232
+   ],
+   "_status": "confirmed"
+  },
+  "tian_shou": {
+   "name": "天寿石",
+   "stat": "耐力",
+   "hole": "pink",
+   "values": [
+    8,
+    17,
+    33,
+    66,
+    119,
+    178,
+    232
+   ],
+   "_status": "confirmed"
+  },
+  "tian_you": {
+   "name": "天佑石",
+   "stat": "信仰",
+   "hole": "pink",
+   "values": [
+    8,
+    17,
+    33,
+    66,
+    119,
+    178,
+    232
+   ],
+   "_status": "confirmed"
+  },
+  "tian_su": {
+   "name": "天速石",
+   "stat": "敏捷",
+   "hole": "pink",
+   "values": [
+    8,
+    17,
+    33,
+    66,
+    119,
+    178,
+    232
+   ],
+   "_status": "confirmed"
+  },
+  "tian_yong": {
+   "name": "天勇石",
+   "stat": "法术攻击",
+   "hole": "purple",
+   "values": [
+    28,
+    55,
+    110,
+    220,
+    396,
+    594,
+    772
+   ],
+   "_status": "confirmed"
+  },
+  "tian_sun": {
+   "name": "天损石",
+   "stat": "物理攻击",
+   "hole": "purple",
+   "values": [
+    28,
+    55,
+    110,
+    220,
+    396,
+    594,
+    772
+   ],
+   "_status": "stat_inferred"
+  },
+  "tian_bai": {
+   "name": "天拜石",
+   "stat": "防御",
+   "hole": "blue",
+   "values": [
+    18,
+    35,
+    70,
+    140,
+    252,
+    378,
+    491
+   ],
+   "_status": "confirmed"
+  },
+  "tian_tui": {
+   "name": "天退石",
+   "stat": "法术防",
+   "hole": "blue",
+   "values": [
+    18,
+    35,
+    70,
+    140,
+    252,
+    378,
+    491
+   ],
+   "_status": "confirmed"
+  },
+  "tian_xian": {
+   "name": "天闲石",
+   "stat": "物理闪避",
+   "hole": "yellow",
+   "values": [
+    33,
+    66,
+    132,
+    165,
+    198,
+    264,
+    330
+   ],
+   "_status": "confirmed"
+  },
+  "tian_gu": {
+   "name": "天孤石",
+   "stat": "法术爆击",
+   "hole": "yellow",
+   "values": [
+    33,
+    66,
+    132,
+    165,
+    198,
+    264,
+    330
+   ],
+   "_status": "confirmed"
+  },
+  "tian_wei": {
+   "name": "天威石",
+   "stat": "物理命中",
+   "hole": "yellow",
+   "values": [
+    33,
+    66,
+    132,
+    165,
+    198,
+    264,
+    330
+   ],
+   "_status": "stat_inferred"
+  },
+  "tian_ying": {
+   "name": "天英石",
+   "stat": "法术命中",
+   "hole": "yellow",
+   "values": [
+    33,
+    66,
+    132,
+    165,
+    198,
+    264,
+    330
+   ],
+   "_status": "stat_inferred"
+  },
+  "tian_gui": {
+   "name": "天贵石",
+   "stat": "物理爆击",
+   "hole": "yellow",
+   "values": [
+    33,
+    66,
+    132,
+    165,
+    198,
+    264,
+    330
+   ],
+   "_status": "stat_inferred"
+  },
+  "tian_man": {
+   "name": "天满石",
+   "stat": "法术闪避",
+   "hole": "yellow",
+   "values": [
+    33,
+    66,
+    132,
+    165,
+    198,
+    264,
+    330
+   ],
+   "_status": "stat_inferred"
+  }
+ },
+ "gem_carve": {
+  "grades": [
+   "普通",
+   "无暇",
+   "完美"
+  ],
+  "five": [
+   [
+    10,
+    11,
+    13
+   ],
+   [
+    19,
+    22,
+    25
+   ],
+   [
+    36,
+    43,
+    49
+   ],
+   [
+    71,
+    82,
+    92
+   ],
+   [
+    125,
+    137,
+    149
+   ],
+   [
+    184,
+    195,
+    206
+   ],
+   [
+    240,
+    253,
+    267
+   ]
+  ],
+  "atk": [
+   [
+    31,
+    36,
+    41
+   ],
+   [
+    60,
+    71,
+    82
+   ],
+   [
+    121,
+    143,
+    165
+   ],
+   [
+    238,
+    273,
+    308
+   ],
+   [
+    416,
+    455,
+    495
+   ],
+   [
+    612,
+    647,
+    683
+   ],
+   [
+    795,
+    841,
+    887
+   ]
+  ],
+  "def": "partial_data",
+  "yellow": "partial_data",
+  "success_rate": 0.5,
+  "_rate_status": "inferred",
+  "fail": "符消失,宝石不变"
+ },
+ "gem_synth": {
+  "min_count": 3,
+  "base_choice": [
+   3,
+   4,
+   5
+  ],
+  "success_by_base": {
+   "3": 0.6,
+   "4": 0.8,
+   "5": 1.0
+  },
+  "_status": "5=100% confirmed; 3/4 inferred",
+  "charm": {
+   "1-3": "低级宝石合成符",
+   "4-6": "高级宝石合成符"
+  },
+  "max_level": 7,
+  "fail": "消耗基数数量宝石",
+  "bind_propagates": true
+ },
+ "gem_remove": {
+  "low_charm": {
+   "level_drop": 2,
+   "destroy_if_level_le": 2
+  },
+  "high_charm": {
+   "must_match_level": true,
+   "level_drop": 0
+  }
+ },
+ "dual_gem": {
+  "min_level": 5,
+  "main_pct": 1.0,
+  "sub_pct": 0.5,
+  "wash_cost_charms": 5,
+  "bound_after_socket": true
+ },
+ "star_up": {
+  "max": 13,
+  "per_star_base_pct": 0.04,
+  "_pct_status": "inferred",
+  "base_count_range": [
+   1,
+   5
+  ],
+  "stone": "升级宝石(同品阶)",
+  "rate_base1": [
+   0.95,
+   0.95,
+   0.92,
+   0.9,
+   0.88,
+   0.85,
+   0.8,
+   0.75,
+   0.7,
+   0.6,
+   0.4,
+   0.25,
+   0.15
+  ],
+  "rate_mult_per_extra_stone": 1.15,
+  "_rate_status": "inferred",
+  "fail_drop": [
+   {
+    "from": [
+     0,
+     5
+    ],
+    "drop": [
+     0,
+     1
+    ]
+   },
+   {
+    "from": [
+     6,
+     9
+    ],
+    "drop": [
+     1,
+     2
+    ]
+   },
+   {
+    "from": [
+     10,
+     12
+    ],
+    "drop": [
+     2,
+     3
+    ]
+   }
+  ],
+  "_drop_status": "rule confirmed(星越高掉越多); numbers inferred",
+  "auto": true,
+  "infinite_gem": "直接13星"
+ },
+ "mingke": {
+  "max": 9,
+  "weapon_atk_pct": 0.03,
+  "armor_def_pct": 0.02,
+  "armor_hp_pct": 0.005,
+  "stone": "生命石(同品阶)",
+  "cost_per_try": 1,
+  "rate": [
+   0.9,
+   0.82,
+   0.74,
+   0.66,
+   0.58,
+   0.5,
+   0.42,
+   0.34,
+   0.26
+  ],
+  "_rate_status": "inferred",
+  "fail_drop": {
+   "1-3": 1,
+   "4-6": 2,
+   "7+": "reset_to_1"
+  },
+  "_drop_status": "7+→1 confirmed; others inferred",
+  "wenyu_prevents_drop": true
+ },
+ "drill": {
+  "tool": "打孔器(同品阶,按孔位)",
+  "tool_bands": [
+   "1-7",
+   "8-10"
+  ],
+  "any_drill": "任意打孔器",
+  "success": 1.0,
+  "_success_status": "inferred"
+ },
+ "wash_hole": {
+  "cost": "1 宝石洗孔符/孔 + 少许银票",
+  "only_empty_holes": true,
+  "bind_propagates": true,
+  "rare_colors": [
+   "pink",
+   "purple"
+  ]
+ },
+ "forge": {
+  "preview": "模拟打造",
+  "max_mult": 6,
+  "_max_mult_status": "conflict Q3 (5 vs 6)",
+  "full_mult_guarantee": {
+   "color": "orange",
+   "max_holes": 10
+  },
+  "random_even_at_full": [
+   "current_holes",
+   "hole_colors",
+   "bind_attr"
+  ],
+  "orange_rate_examples": [
+   {
+    "tier": "fine",
+    "mult": 4,
+    "mat_grade": 3,
+    "orange": 0.22
+   },
+   {
+    "tier": "perfect",
+    "mult": 5,
+    "mat_grade": 2,
+    "orange": 0.45
+   },
+   {
+    "tier": "radiant",
+    "mult": 6,
+    "mat_grade": 1,
+    "orange": 1.0
+   }
+  ],
+  "shanggu_cap": 999,
+  "non_full_max_holes": [
+   6,
+   10
+  ],
+  "current_holes_dist": "binomial(max_holes,0.6)",
+  "_holes_status": "inferred",
+  "recipes": {
+   "taiming_piece": {
+    "上古神器碎片1": 60,
+    "_set": {
+     "毛皮": 140,
+     "魔性碎片1": 55,
+     "上古神器碎片1": 300
+    }
+   },
+   "set_115_base": {
+    "玄兵": 1,
+    "灵胄": 2,
+    "上古神器碎片": 10
+   },
+   "set_120_base": {
+    "玄兵": 1,
+    "灵胄": 2,
+    "上古神器碎片": 12
+   },
+   "radiant_full_per_piece": {
+    "120": {
+     "上古": 887,
+     "灵胄1": 2,
+     "玄兵1": 3
+    },
+    "125": {
+     "上古": 670,
+     "灵胄1": 5,
+     "玄兵1": 2
+    },
+    "130": {
+     "上古": 952,
+     "灵胄1": 7,
+     "玄兵1": 3
+    },
+    "135": {
+     "上古": 940,
+     "灵胄1": 8,
+     "玄兵1": 7
+    },
+    "140": {
+     "上古": 961,
+     "灵胄1": 10,
+     "玄兵1": 9
+    },
+    "145": {
+     "上古": 997,
+     "灵胄1": 11,
+     "玄兵1": 13
+    }
+   },
+   "guanxin_ring": {
+    "上古神器碎片1": "?",
+    "魔性碎片1": "?",
+    "神秘精华": "?"
+   }
+  }
+ },
+ "material_synth": {
+  "grades": [
+   5,
+   4,
+   3,
+   2,
+   1
+  ],
+  "rates": {
+   "5": 1.0,
+   "2": 0.4
+  },
+  "_3_4_rate": "inferred 0.6/0.8",
+  "exceptions_not_100": [
+   "附魔石",
+   "武装原料"
+  ]
+ },
+ "enchant": {
+  "slots": [
+   "head",
+   "body",
+   "legs",
+   "belt",
+   "boots"
+  ],
+  "min_level": 60,
+  "types": [
+   "pdef",
+   "mdef"
+  ],
+  "levels": 6,
+  "switch_type_resets_to": 1,
+  "upgrade_requires": "同属性 level+1 附魔石",
+  "yuanshen_mult": [
+   1,
+   5
+  ],
+  "protect": "归元灵玉",
+  "value_per_level_x_itemlv": [
+   0.6,
+   1.4,
+   2.4,
+   3.8,
+   5.6,
+   8.0
+  ],
+  "_value_status": "inferred"
+ },
+ "spirit": {
+  "max_lines": 5,
+  "repeatable": true,
+  "lingqi_range": [
+   0,
+   100
+  ],
+  "cleared_by_wushang_upgrade": true
+ },
+ "kaiguang": {
+  "needs_identify": true,
+  "rerolls": [
+   "tier",
+   "color",
+   "affixes",
+   "holes"
+  ],
+  "clears": [
+   "stars",
+   "gems"
+  ],
+  "top_tool_orange": 0.5,
+  "tools": {
+   "女神之泪": "橙率高",
+   "仙人之泪": "孔更好"
+  }
+ },
+ "reforge_affix": {
+  "keeps": [
+   "base",
+   "holes",
+   "stars",
+   "durability",
+   "bound"
+  ],
+  "lock_bonus_first_time": 0.1,
+  "prism_by_color": {
+   "green": 4,
+   "blue": 3,
+   "purple": 2,
+   "orange": 1
+  },
+  "blocked_after_set_reform": true
+ },
+ "set_reform": {
+  "min_level": 110,
+  "materials": [
+   "玄兵碎片",
+   "魔锻锭",
+   "失落锻造法"
+  ],
+  "keeps_all": true,
+  "pieces": 8,
+  "bonus_thresholds": "Q6 缺数据",
+  "parts_exchange": {
+   "灵咒": 2,
+   "遗书残页": 10,
+   "=": "1 配件"
+  }
+ },
+ "awaken": {
+  "req": {
+   "rebirth": 3,
+   "min_level": 140,
+   "tier": "radiant",
+   "color": "orange",
+   "stars": 13,
+   "mingke": 9,
+   "no_gems": true,
+   "bound": true
+  },
+  "mult_100pct": 6,
+  "holes_after": 12,
+  "growth_cap_default": 60,
+  "max_level": 160
+ },
+ "decompose": {
+  "min_color": "green",
+  "essence_by_grade": {
+   "凡品": "刀剑精华",
+   "良品": "战意精华",
+   "上品": "神秘精华",
+   "精品": [
+    "真气精华",
+    "无色精华"
+   ],
+   "灵品": "灵淬精华"
+  }
+ },
+ "durability": {
+  "zero_effect": "属性失效",
+  "warn_below_pct": 0.1,
+  "repair_normal": {
+   "currency": "银票",
+   "max_drop_pct": 0.05,
+   "_drop_status": "inferred"
+  },
+  "repair_advanced": {
+   "currency": "银",
+   "max_drop_pct": 0
+  }
+ },
+ "wushang_chain": [
+  {
+   "from": 20,
+   "to": 40,
+   "grade": "上品",
+   "mats": {
+    "上古1": 10,
+    "魔性1": 10
+   }
+  },
+  {
+   "from": 40,
+   "to": 60,
+   "grade": "精品",
+   "mats": {
+    "上古1": 15,
+    "魔性1": 15
+   }
+  },
+  {
+   "from": 60,
+   "to": 80,
+   "grade": "极品",
+   "mats": {
+    "上古1": 20,
+    "魔性1": 20
+   }
+  },
+  {
+   "from": 80,
+   "to": "80新",
+   "npc": "段冶子",
+   "req": {
+    "stars": 8,
+    "mingke": 4,
+    "gems": 6
+   }
+  },
+  {
+   "from": 80,
+   "to": 100,
+   "grade": "灵品",
+   "npc": "贝赫宁水",
+   "mats": {
+    "上古1": 40,
+    "魔性1": 40,
+    "甘霖": 60
+   },
+   "alt_fixed_holes": {
+    "mats": {
+     "上古1": 40,
+     "灵胄1": 40,
+     "玄兵1": 40
+    },
+    "holes": {
+     "pink": 3,
+     "purple": 3,
+     "blue": 2,
+     "yellow": 2
+    }
+   }
+  },
+  {
+   "from": 100,
+   "to": 118,
+   "grade": "灵品",
+   "mats": {
+    "上古1": 26,
+    "魔性1": 26,
+    "甘霖": 40
+   },
+   "_conflict": "BWIKI 74/74/100+30转生石"
+  },
+  {
+   "from": 118,
+   "to": 125,
+   "grade": "玄品",
+   "mats": {
+    "上古1": 54,
+    "魔性1": 54,
+    "甘霖": 80
+   }
+  },
+  {
+   "from": 125,
+   "to": 135,
+   "grade": "玄品",
+   "mats": {
+    "上古1": 74,
+    "魔性1": 74,
+    "甘霖": 100,
+    "无尚重生石": 30
+   }
+  },
+  {
+   "from": 135,
+   "to": 142,
+   "grade": "神品",
+   "mats": {
+    "上古1": 80,
+    "魔性1": 80,
+    "甘霖": 100,
+    "无尚之晶": 100
+   }
+  }
+ ],
+ "wushang_upgrade_clears": [
+  "stars",
+  "mingke",
+  "gems",
+  "spirit"
+ ],
+ "npcs": {
+  "wushang": {
+   "侠客": "段沧海@灵昌广场",
+   "刺客": "南宫凌云@皇城",
+   "术士": "左千秋@灵昌城",
+   "修真": "诸葛庭@皇城"
+  },
+  "super_star": "修行客@仙境府邸"
+ }
+}

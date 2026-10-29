@@ -1,0 +1,20 @@
+{
+  "consumables": {
+    "hp_potion_s": {"name": "小回血丹", "effect": "heal_hp", "value": 60, "price": 20},
+    "mp_potion_s": {"name": "小回蓝丹", "effect": "heal_mp", "value": 40, "price": 20},
+    "hp_potion_m": {"name": "中回血丹", "effect": "heal_hp", "value": 180, "price": 80},
+    "mp_potion_m": {"name": "中回蓝丹", "effect": "heal_mp", "value": 120, "price": 80},
+    "pet_food": {"name": "宠粮", "effect": "pet_loyalty", "value": 20, "price": 30},
+    "life_dew": {"name": "延寿露", "effect": "pet_life", "value": 10, "price": 50},
+    "catch_scroll": {"name": "唤妖符", "effect": "catch", "value": 1, "price": 40},
+    "star_stone": {"name": "升星宝石", "effect": "star_up", "value": 1, "price": 100},
+    "life_stone": {"name": "生命石", "effect": "mingke", "value": 1, "price": 80},
+    "hole_drill": {"name": "打孔器", "effect": "drill", "value": 1, "price": 150},
+    "gem_bag": {"name": "一级宝石袋", "effect": "random_gem", "value": 1, "price": 120},
+    "wuxing_pill_low": {"name": "低级悟性丹", "effect": "wuxing", "value": 1, "max": 7, "price": 200},
+    "huan_tong": {"name": "还童丹", "effect": "reset_pet", "value": 1, "price": 500},
+    "apt_pill": {"name": "资质丹", "effect": "apt_boost", "value": 2, "price": 150},
+    "skill_book_any": {"name": "随机技能书", "effect": "skill_book", "value": 1, "price": 250},
+    "neidan_shard": {"name": "内丹碎片", "effect": "neidan", "value": 1, "price": 300}
+  }
+}

@@ -1,0 +1,833 @@
+{
+  "_comment": "技能中文名对齐官网职业技能介绍；数值为文字版简化，非客户端原表",
+  "fumo": {
+    "name": "伏魔刀法",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.4,
+    "cost": {
+      "mp": 8,
+      "mp_per_lv": 3
+    },
+    "effects": [
+      {
+        "status": "stun",
+        "chance": 0.15,
+        "turns": 1
+      }
+    ],
+    "desc": "单体物理，几率击晕",
+    "mirror": "官网·伏魔刀法"
+  },
+  "beishui": {
+    "name": "破釜沉舟",
+    "learn_level": 3,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.1,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "low_hp",
+      "threshold": 0.2,
+      "bonus": 2.0
+    },
+    "desc": "生命不足20%时伤害翻倍",
+    "mirror": "官网·破釜沉舟"
+  },
+  "liumai": {
+    "name": "六脉神剑",
+    "learn_level": 6,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "multi_enemies",
+    "count": 2,
+    "mult": 0.9,
+    "cost": {
+      "mp": 15,
+      "mp_per_lv": 4
+    },
+    "desc": "群体物理，等级越高目标越多",
+    "mirror": "官网·六脉神剑"
+  },
+  "lengchao": {
+    "name": "冷嘲热讽",
+    "learn_level": 1,
+    "kind": "debuff",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 0,
+    "cost": {
+      "mp": 8,
+      "mp_per_lv": 2
+    },
+    "special": {
+      "type": "taunt"
+    },
+    "effects": [
+      {
+        "status": "taunt",
+        "chance": 0.9,
+        "turns": 3
+      }
+    ],
+    "desc": "嘲讽3回合，被击累积侠义之心",
+    "mirror": "官网·冷嘲热讽"
+  },
+  "junlin": {
+    "name": "君临天下",
+    "learn_level": 4,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.3,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "hp_scale"
+    },
+    "desc": "生命越高伤害越高",
+    "mirror": "官网·君临天下"
+  },
+  "guiyuan": {
+    "name": "一朝归元",
+    "learn_level": 8,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 0.7,
+    "cost": {
+      "rage_pct": 0.4
+    },
+    "special": {
+      "type": "xiayi",
+      "per_stack": 1.0
+    },
+    "desc": "消耗怒气与侠义之心增伤",
+    "mirror": "官网·一朝归元"
+  },
+  "xuanfeng": {
+    "name": "玄风刃",
+    "learn_level": 10,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.6,
+    "element": "玄",
+    "cost": {
+      "mp": 20,
+      "mp_per_lv": 5
+    },
+    "effects": [
+      {
+        "status": "weak",
+        "chance": 0.4,
+        "turns": 2
+      }
+    ],
+    "desc": "天资·玄，衰竭降攻",
+    "mirror": "B站WIKI天资·玄风刃"
+  },
+  "qianzhu": {
+    "name": "千蛛万毒手",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.2,
+    "cost": {
+      "mp": 8,
+      "mp_per_lv": 3
+    },
+    "effects": [
+      {
+        "status": "poison",
+        "chance": 0.35,
+        "turns": 3,
+        "ratio": 0.25
+      }
+    ],
+    "desc": "物理攻击，几率中毒",
+    "mirror": "官网·千蛛万毒手"
+  },
+  "anying": {
+    "name": "暗影迷踪拳",
+    "learn_level": 3,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.3,
+    "cost": {
+      "mp": 12,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "speed_scale",
+      "self_damage": 0.15
+    },
+    "desc": "速度越高伤害越高，反噬15%生命",
+    "mirror": "官网·暗影迷踪拳"
+  },
+  "huagong": {
+    "name": "化功绵掌",
+    "learn_level": 6,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.0,
+    "cost": {
+      "mp": 12,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "mp_burn",
+      "ratio": 0.3,
+      "convert": 0.5
+    },
+    "desc": "削蓝并转为伤害",
+    "mirror": "官网·化功绵掌"
+  },
+  "jiying": {
+    "name": "疾影袭心",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.3,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "bonus_vs",
+      "statuses": [
+        "armor_break"
+      ],
+      "bonus": 0.6
+    },
+    "desc": "目标破甲时额外增伤",
+    "mirror": "官网·疾影袭心"
+  },
+  "bahuang": {
+    "name": "八荒六合",
+    "learn_level": 4,
+    "kind": "buff",
+    "target": "ally",
+    "mult": 0,
+    "cost": {
+      "mp": 12,
+      "mp_per_lv": 3
+    },
+    "effects": [
+      {
+        "status": "blessing",
+        "chance": 1.0,
+        "turns": 3
+      }
+    ],
+    "desc": "提升法术承伤/治疗并附带内力充沛（简化为圣灵式增益）",
+    "mirror": "官网·八荒六合（简化）"
+  },
+  "feihua": {
+    "name": "飞花溅玉",
+    "learn_level": 8,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 0.8,
+    "cost": {
+      "rage_pct": 0.35
+    },
+    "effects": [
+      {
+        "status": "toxin",
+        "chance": 1.0,
+        "turns": 4,
+        "ratio": 0.2
+      }
+    ],
+    "desc": "消耗怒气，附加烈性毒药",
+    "mirror": "官网·飞花溅玉"
+  },
+  "dulong": {
+    "name": "毒龙手",
+    "learn_level": 10,
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.6,
+    "element": "毒",
+    "cost": {
+      "mp": 20,
+      "mp_per_lv": 5
+    },
+    "effects": [
+      {
+        "status": "poison",
+        "chance": 0.6,
+        "turns": 3,
+        "ratio": 0.3
+      }
+    ],
+    "desc": "天资·毒",
+    "mirror": "B站WIKI天资·毒龙手"
+  },
+  "sixiang": {
+    "name": "四相决",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.3,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "random_element",
+      "chance": 0.3
+    },
+    "desc": "随机四相伤害+异常",
+    "mirror": "官网·四相决"
+  },
+  "huanmie": {
+    "name": "唤灭破",
+    "learn_level": 3,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.0,
+    "cost": {
+      "mp": 12,
+      "mp_per_lv": 3
+    },
+    "special": {
+      "type": "bonus_vs",
+      "statuses": [
+        "burn",
+        "frostbite",
+        "weak",
+        "slow"
+      ],
+      "bonus": 1.0
+    },
+    "desc": "目标有四相异常时伤害翻倍",
+    "mirror": "官网·唤灭破"
+  },
+  "tongdi": {
+    "name": "恸地神咒",
+    "learn_level": 6,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "all_enemies",
+    "mult": 0.8,
+    "cost": {
+      "mp": 20,
+      "mp_per_lv": 5
+    },
+    "special": {
+      "type": "self_buff",
+      "status": "earth_guard",
+      "turns": 2
+    },
+    "desc": "十字土伤（文字版简化全体）并提升自身物防速度",
+    "mirror": "官网·恸地神咒"
+  },
+  "shehun": {
+    "name": "摄魂咒",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.4,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 3
+    },
+    "desc": "单体法术",
+    "mirror": "官网·摄魂咒"
+  },
+  "meihuo": {
+    "name": "魅惑术",
+    "learn_level": 4,
+    "kind": "debuff",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 0.5,
+    "cost": {
+      "mp": 14,
+      "mp_per_lv": 3
+    },
+    "effects": [
+      {
+        "status": "confuse",
+        "chance": 0.45,
+        "turns": 2
+      }
+    ],
+    "desc": "几率混乱",
+    "mirror": "官网·魅惑术"
+  },
+  "anyingmo": {
+    "name": "暗影魔咒",
+    "learn_level": 8,
+    "kind": "buff",
+    "target": "pet",
+    "mult": 0,
+    "cost": {
+      "mp": 18,
+      "mp_per_lv": 4
+    },
+    "effects": [
+      {
+        "status": "shadow",
+        "chance": 1.0,
+        "turns": 3
+      }
+    ],
+    "desc": "大幅提升己方宠物攻防",
+    "mirror": "官网·暗影魔咒"
+  },
+  "fenxin": {
+    "name": "玄天心火",
+    "learn_level": 10,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.6,
+    "element": "火",
+    "cost": {
+      "mp": 22,
+      "mp_per_lv": 5
+    },
+    "effects": [
+      {
+        "status": "burn",
+        "chance": 0.6,
+        "turns": 3,
+        "ratio": 0.3
+      }
+    ],
+    "desc": "天资·火",
+    "mirror": "B站WIKI天资·玄天心火"
+  },
+  "cibei": {
+    "name": "慈悲咒",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.3,
+    "cost": {
+      "mp": 9,
+      "mp_per_lv": 3
+    },
+    "desc": "单体法术",
+    "mirror": "官网·慈悲咒"
+  },
+  "chenshui": {
+    "name": "沉水润心",
+    "learn_level": 3,
+    "kind": "heal",
+    "target": "ally",
+    "mult": 1.5,
+    "cost": {
+      "mp": 14,
+      "mp_per_lv": 4
+    },
+    "special": {
+      "type": "splash",
+      "ratio": 0.5
+    },
+    "desc": "治疗并溅射十字（简化为另一目标一半）",
+    "mirror": "官网·沉水润心"
+  },
+  "xianyin": {
+    "name": "仙音化雨",
+    "learn_level": 6,
+    "kind": "cleanse",
+    "target": "ally",
+    "mult": 0.3,
+    "cost": {
+      "mp": 14,
+      "mp_per_lv": 3
+    },
+    "effects": [
+      {
+        "status": "hot",
+        "chance": 0.7,
+        "turns": 3,
+        "ratio": 0.3
+      }
+    ],
+    "desc": "驱散负面，几率持续治疗",
+    "mirror": "官网·仙音化雨"
+  },
+  "tiandi": {
+    "name": "天地极乐",
+    "learn_level": 1,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.4,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 3
+    },
+    "desc": "单体法术",
+    "mirror": "官网·天地极乐"
+  },
+  "shengling": {
+    "name": "圣灵附体",
+    "learn_level": 4,
+    "kind": "buff",
+    "target": "ally",
+    "mult": 0,
+    "cost": {
+      "mp": 16,
+      "mp_per_lv": 4
+    },
+    "effects": [
+      {
+        "status": "blessing",
+        "chance": 1.0,
+        "turns": 3
+      }
+    ],
+    "desc": "全二级属性提升",
+    "mirror": "官网·圣灵附体"
+  },
+  "haotian": {
+    "name": "昊天罡气",
+    "learn_level": 8,
+    "kind": "shield",
+    "target": "ally",
+    "mult": 2.0,
+    "cost": {
+      "mp": 20,
+      "mp_per_lv": 5
+    },
+    "desc": "护盾吸收伤害，破碎反伤",
+    "mirror": "官网·昊天罡气"
+  },
+  "ningbing": {
+    "name": "如履薄冰",
+    "learn_level": 10,
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.6,
+    "element": "冰",
+    "cost": {
+      "mp": 20,
+      "mp_per_lv": 5
+    },
+    "effects": [
+      {
+        "status": "slow",
+        "chance": 0.6,
+        "turns": 2
+      }
+    ],
+    "desc": "天资·冰",
+    "mirror": "B站WIKI天资·如履薄冰"
+  },
+  "longxi": {
+    "name": "龙息乱",
+    "pet": "talent",
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "all_enemies",
+    "mult": 1.0,
+    "cost": {
+      "life": 3
+    },
+    "special": {
+      "type": "random_status",
+      "chance": 0.5,
+      "statuses": [
+        "confuse",
+        "armor_break",
+        "poison",
+        "slow",
+        "burn"
+      ]
+    },
+    "desc": "耗寿，全体/十字伤+随机异常",
+    "mirror": "官网·龙息乱"
+  },
+  "fengmobao": {
+    "name": "风魔爆",
+    "pet": "talent",
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "all_enemies",
+    "mult": 1.3,
+    "cost": {
+      "life": 5
+    },
+    "special": {
+      "type": "ignore_defend"
+    },
+    "desc": "耗寿全体法伤，无视防御状态",
+    "mirror": "官网·风魔爆"
+  },
+  "shuimobao": {
+    "name": "水魔爆",
+    "pet": "talent",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "all_enemies",
+    "mult": 1.1,
+    "cost": {
+      "life": 4
+    },
+    "desc": "耗寿全体物伤",
+    "mirror": "官网·水魔爆"
+  },
+  "huomobao": {
+    "name": "火魔爆",
+    "pet": "talent",
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "all_enemies",
+    "mult": 1.2,
+    "cost": {
+      "life": 4
+    },
+    "effects": [
+      {
+        "status": "burn",
+        "chance": 0.5,
+        "turns": 2,
+        "ratio": 0.25
+      }
+    ],
+    "desc": "耗寿全体火伤+灼烧",
+    "mirror": "官网·火魔爆"
+  },
+  "longxing": {
+    "name": "龙形圣体",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "hp": 0.2
+    },
+    "desc": "生命+20%",
+    "mirror": "官网·龙形圣体"
+  },
+  "shixue": {
+    "name": "嗜血狂暴",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "pcrit": 0.6
+    },
+    "desc": "物理暴击大幅提升",
+    "mirror": "官网·嗜血狂暴"
+  },
+  "manli": {
+    "name": "天生蛮力",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "patk": 0.15
+    },
+    "desc": "物攻提升",
+    "mirror": "官网·天生蛮力"
+  },
+  "longlin": {
+    "name": "龙鳞甲胄",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "pdef": 0.2
+    },
+    "desc": "物防提升",
+    "mirror": "官网·龙鳞甲胄"
+  },
+  "mohualin": {
+    "name": "魔化鳞甲",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "mdef": 0.2
+    },
+    "desc": "法防提升",
+    "mirror": "官网·魔化鳞甲"
+  },
+  "shengming": {
+    "name": "生命祝福",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "hp": 0.15
+    },
+    "desc": "生命提升",
+    "mirror": "官网·生命祝福"
+  },
+  "liesha_bless": {
+    "name": "烈焰祝福",
+    "pet": "talent",
+    "kind": "passive",
+    "passive": {
+      "matk": 0.15
+    },
+    "desc": "法攻提升",
+    "mirror": "官网·烈焰祝福"
+  },
+  "siyao": {
+    "name": "撕咬",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.4,
+    "cost": {
+      "mp": 6,
+      "mp_per_lv": 2
+    },
+    "desc": "单体物理",
+    "mirror": "官网·撕咬"
+  },
+  "lizhua": {
+    "name": "利爪猛击",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.2,
+    "cost": {
+      "mp": 6,
+      "mp_per_lv": 2
+    },
+    "effects": [
+      {
+        "status": "toxin",
+        "chance": 0.35,
+        "turns": 2,
+        "ratio": 0.15
+      }
+    ],
+    "desc": "物攻并几率流血（用烈毒近似）",
+    "mirror": "官网·利爪猛击"
+  },
+  "duxing": {
+    "name": "毒性穿刺",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.0,
+    "cost": {
+      "mp": 6,
+      "mp_per_lv": 2
+    },
+    "effects": [
+      {
+        "status": "poison",
+        "chance": 0.5,
+        "turns": 3,
+        "ratio": 0.25
+      }
+    ],
+    "desc": "物攻+中毒",
+    "mirror": "官网·毒性穿刺"
+  },
+  "yexing": {
+    "name": "野性冲撞",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.1,
+    "cost": {
+      "mp": 8,
+      "mp_per_lv": 2
+    },
+    "effects": [
+      {
+        "status": "stun",
+        "chance": 0.25,
+        "turns": 1
+      }
+    ],
+    "desc": "几率晕眩",
+    "mirror": "官网·野性冲撞"
+  },
+  "sanbei": {
+    "name": "三倍速冲击",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "multi_enemies",
+    "count": 3,
+    "mult": 0.7,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 2
+    },
+    "effects": [
+      {
+        "status": "confuse",
+        "chance": 0.2,
+        "turns": 1
+      }
+    ],
+    "desc": "十字物伤，几率混乱",
+    "mirror": "官网·三倍速冲击"
+  },
+  "zhushu": {
+    "name": "注魔水冲",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "phys",
+    "target": "enemy",
+    "mult": 1.3,
+    "cost": {
+      "mp": 8,
+      "mp_per_lv": 2
+    },
+    "desc": "单体物伤",
+    "mirror": "官网·注魔水冲"
+  },
+  "fali_zhuoshao": {
+    "name": "法力灼烧",
+    "pet": "normal",
+    "kind": "attack",
+    "dmg": "magic",
+    "target": "enemy",
+    "mult": 1.2,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 2
+    },
+    "special": {
+      "type": "mp_burn",
+      "ratio": 0.2,
+      "convert": 1.0
+    },
+    "desc": "法伤并蒸发法力",
+    "mirror": "官网·法力灼烧"
+  },
+  "shengsheng": {
+    "name": "生生不息",
+    "pet": "normal",
+    "kind": "heal",
+    "target": "ally",
+    "mult": 1.2,
+    "cost": {
+      "mp": 10,
+      "mp_per_lv": 2
+    },
+    "desc": "治疗单体",
+    "mirror": "官网·生生不息"
+  }
+}

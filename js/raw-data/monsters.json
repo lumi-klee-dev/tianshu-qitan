@@ -1,0 +1,428 @@
+{
+  "areas": [
+    {
+      "id": "north_forest",
+      "name": "北影月森林",
+      "level_range": [
+        1,
+        5
+      ],
+      "monsters": [
+        {
+          "id": "slime",
+          "name": "青苔怪",
+          "level": 1,
+          "hp": 45,
+          "patk": 8,
+          "pdef": 2,
+          "matk": 4,
+          "mdef": 2,
+          "spd": 8,
+          "exp": 18,
+          "silver": [
+            3,
+            8
+          ],
+          "drops": [
+            [
+              "wood_sword",
+              0.08
+            ],
+            [
+              "cloth_robe",
+              0.08
+            ],
+            [
+              "star_stone",
+              0.15
+            ]
+          ]
+        },
+        {
+          "id": "wild_rabbit",
+          "name": "灰野兔",
+          "level": 2,
+          "hp": 55,
+          "patk": 11,
+          "pdef": 3,
+          "matk": 3,
+          "mdef": 2,
+          "spd": 14,
+          "exp": 22,
+          "silver": [
+            5,
+            10
+          ],
+          "drops": [
+            [
+              "catch_scroll",
+              0.3
+            ],
+            [
+              "pet_food",
+              0.2
+            ]
+          ],
+          "pet_species": "huiyetu"
+        },
+        {
+          "id": "wild_cat",
+          "name": "猫",
+          "level": 3,
+          "hp": 65,
+          "patk": 14,
+          "pdef": 4,
+          "matk": 4,
+          "mdef": 3,
+          "spd": 13,
+          "exp": 28,
+          "silver": [
+            6,
+            14
+          ],
+          "drops": [
+            [
+              "catch_scroll",
+              0.25
+            ],
+            [
+              "iron_helm",
+              0.06
+            ]
+          ],
+          "pet_species": "mao"
+        },
+        {
+          "id": "bandit",
+          "name": "山贼",
+          "level": 4,
+          "hp": 90,
+          "patk": 18,
+          "pdef": 6,
+          "matk": 5,
+          "mdef": 4,
+          "spd": 10,
+          "exp": 40,
+          "silver": [
+            10,
+            20
+          ],
+          "drops": [
+            [
+              "wolf_fang",
+              0.1
+            ],
+            [
+              "life_stone",
+              0.2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "east_forest",
+      "name": "东影月森林",
+      "level_range": [
+        3,
+        8
+      ],
+      "monsters": [
+        {
+          "id": "sheep",
+          "name": "白羊",
+          "level": 5,
+          "hp": 100,
+          "patk": 16,
+          "pdef": 8,
+          "matk": 5,
+          "mdef": 6,
+          "spd": 9,
+          "exp": 45,
+          "silver": [
+            12,
+            22
+          ],
+          "drops": [
+            [
+              "catch_scroll",
+              0.25
+            ]
+          ],
+          "pet_species": "baiyang"
+        },
+        {
+          "id": "bear",
+          "name": "棕熊",
+          "level": 6,
+          "hp": 140,
+          "patk": 24,
+          "pdef": 12,
+          "matk": 6,
+          "mdef": 8,
+          "spd": 8,
+          "exp": 55,
+          "silver": [
+            15,
+            28
+          ],
+          "drops": [
+            [
+              "life_stone",
+              0.2
+            ],
+            [
+              "catch_scroll",
+              0.2
+            ]
+          ],
+          "pet_species": "zongxiong"
+        }
+      ]
+    },
+    {
+      "id": "black_water",
+      "name": "黑色水域",
+      "level_range": [
+        5,
+        10
+      ],
+      "monsters": [
+        {
+          "id": "snake",
+          "name": "草蛇",
+          "level": 6,
+          "hp": 110,
+          "patk": 20,
+          "pdef": 8,
+          "matk": 10,
+          "mdef": 8,
+          "spd": 14,
+          "exp": 50,
+          "silver": [
+            14,
+            26
+          ],
+          "drops": [
+            [
+              "catch_scroll",
+              0.28
+            ]
+          ],
+          "pet_species": "caoshe"
+        },
+        {
+          "id": "crab",
+          "name": "黑钳蟹",
+          "level": 7,
+          "hp": 130,
+          "patk": 22,
+          "pdef": 14,
+          "matk": 8,
+          "mdef": 10,
+          "spd": 10,
+          "exp": 60,
+          "silver": [
+            16,
+            30
+          ],
+          "drops": [
+            [
+              "jade_ring",
+              0.08
+            ],
+            [
+              "catch_scroll",
+              0.25
+            ]
+          ],
+          "pet_species": "heiqianxie"
+        }
+      ]
+    },
+    {
+      "id": "mist_marsh",
+      "name": "迷梦泽",
+      "level_range": [
+        6,
+        12
+      ],
+      "monsters": [
+        {
+          "id": "croc",
+          "name": "黑水鳄鱼",
+          "level": 8,
+          "hp": 160,
+          "patk": 26,
+          "pdef": 12,
+          "matk": 12,
+          "mdef": 10,
+          "spd": 11,
+          "exp": 75,
+          "silver": [
+            20,
+            35
+          ],
+          "drops": [
+            [
+              "shadow_boots",
+              0.07
+            ],
+            [
+              "catch_scroll",
+              0.22
+            ]
+          ],
+          "pet_species": "heishuieyu"
+        },
+        {
+          "id": "fog_witch",
+          "name": "雾巫",
+          "level": 9,
+          "hp": 120,
+          "patk": 12,
+          "pdef": 6,
+          "matk": 30,
+          "mdef": 14,
+          "spd": 14,
+          "exp": 80,
+          "silver": [
+            20,
+            38
+          ],
+          "drops": [
+            [
+              "skill_book_any",
+              0.12
+            ],
+            [
+              "star_stone",
+              0.25
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sky_tower",
+      "name": "通天塔·试炼",
+      "level_range": [
+        8,
+        15
+      ],
+      "monsters": [
+        {
+          "id": "tower_guard",
+          "name": "塔卫",
+          "level": 10,
+          "hp": 180,
+          "patk": 32,
+          "pdef": 18,
+          "matk": 12,
+          "mdef": 14,
+          "spd": 12,
+          "exp": 100,
+          "silver": [
+            25,
+            50
+          ],
+          "drops": [
+            [
+              "taiming_helm",
+              0.05
+            ],
+            [
+              "star_stone",
+              0.3
+            ],
+            [
+              "gem_bag",
+              0.15
+            ]
+          ]
+        },
+        {
+          "id": "scorpion",
+          "name": "宝石蝎",
+          "level": 12,
+          "hp": 170,
+          "patk": 36,
+          "pdef": 16,
+          "matk": 14,
+          "mdef": 12,
+          "spd": 13,
+          "exp": 120,
+          "silver": [
+            30,
+            55
+          ],
+          "drops": [
+            [
+              "catch_scroll",
+              0.2
+            ],
+            [
+              "life_stone",
+              0.3
+            ]
+          ],
+          "pet_species": "baoshixie"
+        },
+        {
+          "id": "wolf",
+          "name": "怒怒狼",
+          "level": 11,
+          "hp": 160,
+          "patk": 34,
+          "pdef": 14,
+          "matk": 10,
+          "mdef": 10,
+          "spd": 15,
+          "exp": 110,
+          "silver": [
+            28,
+            50
+          ],
+          "drops": [
+            [
+              "catch_scroll",
+              0.22
+            ]
+          ],
+          "pet_species": "nunulang"
+        },
+        {
+          "id": "dragon_spawn",
+          "name": "金鳞幼龙",
+          "level": 14,
+          "hp": 220,
+          "patk": 30,
+          "pdef": 20,
+          "matk": 38,
+          "mdef": 18,
+          "spd": 14,
+          "exp": 160,
+          "silver": [
+            40,
+            70
+          ],
+          "drops": [
+            [
+              "guanxin_ring",
+              0.04
+            ],
+            [
+              "neidan_shard",
+              0.1
+            ],
+            [
+              "catch_scroll",
+              0.12
+            ]
+          ],
+          "pet_species": "xiaojinlong"
+        }
+      ]
+    }
+  ]
+}
